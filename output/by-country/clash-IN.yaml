@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - xiaohe
   type: vless
   server: 194.61.31.126
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 04 - xiaohe
   type: vless
   server: 194.61.31.126

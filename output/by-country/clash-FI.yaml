@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: 151.101.56.6
+  server: a2.arshia-nova.ir
   port: 443
   uuid: d9eda159-18d6-4457-8983-55523a21658c
   udp: true
@@ -15,7 +15,7 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /?TELEGRAM---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI
+    path: /
     headers:
       Host: c12.com
 - name: 🇫🇮 FI 02 - xiaohe
@@ -29,10 +29,23 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
+    path: /?TELEGRAM---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI
     headers:
       Host: c12.com
 - name: 🇫🇮 FI 03 - xiaohe
+  type: vless
+  server: italic.dearhossein-taktaz.ir
+  port: 8080
+  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: italic.dearhossein-taktaz.ir
+- name: 🇫🇮 FI 04 - xiaohe
   type: vless
   server: k2.cloud--vpn.site
   port: 443
@@ -46,9 +59,9 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 04 - xiaohe
+- name: 🇫🇮 FI 05 - xiaohe
   type: vless
-  server: a2.arshia-nova.ir
+  server: 151.101.56.6
   port: 443
   uuid: d9eda159-18d6-4457-8983-55523a21658c
   udp: true
@@ -57,10 +70,10 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /
+    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 05 - xiaohe
+- name: 🇫🇮 FI 06 - xiaohe
   type: vless
   server: 185.79.138.71
   port: 448
@@ -82,6 +95,7 @@ proxy-groups:
   - 🇫🇮 FI 03 - xiaohe
   - 🇫🇮 FI 04 - xiaohe
   - 🇫🇮 FI 05 - xiaohe
+  - 🇫🇮 FI 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,5 +106,6 @@ proxy-groups:
   - 🇫🇮 FI 03 - xiaohe
   - 🇫🇮 FI 04 - xiaohe
   - 🇫🇮 FI 05 - xiaohe
+  - 🇫🇮 FI 06 - xiaohe
 rules:
 - MATCH,PROXIES
