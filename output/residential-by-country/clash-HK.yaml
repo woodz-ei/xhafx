@@ -6,16 +6,16 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   type: vless
-  server: e283de09-tla000-u1vxv2-v3c2.hk3.hyhuawei.com
+  server: 19a3f02e-tla000-tl6lcj-tng5.hk3.hyhuawei.com
   port: 443
-  uuid: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
+  uuid: 2ec58858-976b-11ea-82ef-f23c9164ca5d
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
-  client-fingerprint: qq
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
