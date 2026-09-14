@@ -5,27 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  type: ss
+  server: 188.132.174.236
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
+  server: shop.neexbyte.ir
+  port: 8443
+  uuid: 464bc502-f963-45b6-81e3-e33d18427506
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: global.fastly.com
+  servername: shop.neexbyte.ir
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: BechBad.global.ssl.fastly.net
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  type: vless
-  server: 188.132.237.20
-  port: 2095
-  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: shop.neexbyte.ir
 proxy-groups:
 - name: PROXIES
   type: select
