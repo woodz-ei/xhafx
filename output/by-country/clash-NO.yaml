@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇴 NO 01 - xiaohe
-  type: ss
-  server: 185.213.23.63
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  udp: true
-- name: 🇳🇴 NO 02 - xiaohe
   type: vless
   server: 151.242.168.125
   port: 390
@@ -23,9 +16,9 @@ proxies:
     public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
   servername: bowandbead.com
   client-fingerprint: qq
-- name: 🇳🇴 NO 03 - xiaohe
+- name: 🇳🇴 NO 02 - xiaohe
   type: vless
-  server: aldebaran.yokkastars.com
+  server: 89.185.81.65
   port: 40443
   uuid: ed91e79c-f6bf-4fba-8cc0-6d45acaec22b
   udp: true
@@ -35,6 +28,13 @@ proxies:
     public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
   servername: deepl.com
   client-fingerprint: chrome
+- name: 🇳🇴 NO 03 - xiaohe
+  type: ss
+  server: 185.213.23.63
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
