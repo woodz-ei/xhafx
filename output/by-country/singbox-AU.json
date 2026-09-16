@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "82.198.246.250",
+      "server": "82.198.246.233",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto"
@@ -19,7 +19,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "whatsapp.com",
+        "server_name": "css.rbxcdn.com",
         "insecure": true
       }
     },
@@ -35,35 +35,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-      "server": "au1.gsafevpnapi.com",
-      "server_port": 20270,
-      "uuid": "f0eb9f67-ef76-40aa-a1e6-22a11d5a9379",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE",
-          "short_id": "e6a5a4a9115456de"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
       ]
     },
     {
@@ -72,8 +50,7 @@
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

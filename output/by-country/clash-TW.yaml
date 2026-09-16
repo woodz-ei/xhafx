@@ -5,55 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
-  server: 61.231.19.116
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  server: 103.115.109.49
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 103.115.109.49
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: vpn-tw-002.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: www.bing.com
+  sni: google.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  server: 104.199.219.172
-  port: 40800
-  udp: true
-  type: vless
-  uuid: 5859f6a7-cda1-47c2-8353-fcdee281f31d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
-    short-id: 186e4c2732d61a3d
-  servername: www.intel.com
-  client-fingerprint: random
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  server: 35.229.136.113
-  port: 35412
-  udp: true
-  type: vless
-  uuid: 5d3cbdb2-b82d-4078-82b8-5dd413cca82b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
-    short-id: 0630b874d595
-  servername: www.amd.com
-  client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   server: 35.201.230.136
   port: 443
   udp: true
@@ -65,8 +24,48 @@ proxies:
     public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
     short-id: 5e13a6d43d0644c9
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
+  client-fingerprint: edge
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  server: 35.201.163.218
+  port: 30837
+  udp: true
+  type: vless
+  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
+    short-id: 97101ba788915e5a
+  servername: www.sony.com
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+  server: 60.248.219.78
+  port: 443
+  udp: true
+  type: vless
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  tls: true
+  servername: ty986gfazs.cainiaohub.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
+  server: 104.199.219.172
+  port: 40800
+  udp: true
+  type: vless
+  uuid: 5859f6a7-cda1-47c2-8353-fcdee281f31d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
+    short-id: 186e4c2732d61a3d
+  servername: www.intel.com
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
   server: 85.237.207.49
   port: 50160
   udp: true
@@ -74,6 +73,17 @@ proxies:
   password: a56619e2bed91121eabb97d20be207c3
   sni: 85-237-207-49.liao.kdns.fr
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
+  server: 118.167.212.163
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
