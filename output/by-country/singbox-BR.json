@@ -5,18 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-      "server": "185.255.179.11",
-      "server_port": 9443,
-      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
-      "tls": {
-        "enabled": true,
-        "server_name": "hub-lv-01.hanvpn.cc",
-        "insecure": false
-      },
+      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+      "server": "189.74.97.47",
+      "server_port": 2087,
+      "uuid": "894fe9f0-b998-49c0-8003-a5007de921e1",
       "transport": {
-        "type": "grpc",
-        "service_name": "lv01-grpc-8e47a"
+        "type": "ws",
+        "path": "/755276b33b6f"
       }
     },
     {
@@ -24,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
