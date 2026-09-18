@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
-  server: 165.154.195.38
-  port: 35034
+  server: 36.224.185.173
+  port: 50099
   udp: true
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   server: 35.201.230.136
   port: 443
@@ -26,39 +25,21 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: 104.199.219.172
-  port: 40800
-  udp: true
-  type: vless
-  uuid: 5859f6a7-cda1-47c2-8353-fcdee281f31d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
-    short-id: 186e4c2732d61a3d
-  servername: www.intel.com
-  client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
   server: 160.187.100.109
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 160.187.100.109
+  sni: 127.0.0.1
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  server: 35.221.158.209
-  port: 32981
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+  server: 103.115.109.49
+  port: 443
   udp: true
-  type: vless
-  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
-    short-id: 70f4b7a4c40636
-  servername: www.sony.com
-  client-fingerprint: qq
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2🇨🇳
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,7 +49,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,6 +58,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
 rules:
 - MATCH,PROXIES
