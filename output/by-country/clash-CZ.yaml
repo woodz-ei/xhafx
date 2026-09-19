@@ -5,14 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 194.87.59.104
-  port: 2085
+  server: 95.85.230.35
+  port: 443
   udp: true
   type: vless
-  uuid: 7b07d862-b698-47c1-884b-3e7dd6c8b862
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
+  servername: de.oblaco.bet
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
