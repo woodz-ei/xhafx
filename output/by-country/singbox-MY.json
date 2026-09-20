@@ -16,24 +16,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
-      "server": "my1.miyazono-kaori.com",
-      "server_port": 443,
-      "uuid": "1d6c2ce7-7b05-40cb-8779-bb1ade0899ce",
-      "flow": "xtls-rprx-vision",
+      "server": "mlxy1.mangshe.xyz",
+      "server_port": 2060,
+      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
       "tls": {
         "enabled": true,
-        "server_name": "www.setel.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "t3HU7p5iYjE9Lcq2-QHTXZFhpAvoXljTNDgmFkFN-Tc",
-          "short_id": "99f8972e3dd5ed"
-        }
+        "server_name": "mlxy1.mangshe.xyz",
+        "insecure": true
       }
     },
     {

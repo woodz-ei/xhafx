@@ -13,18 +13,13 @@ proxies:
   sni: moltbot.doctoroyy.net
   skip-cert-verify: true
 - name: 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
-  server: my1.miyazono-kaori.com
-  port: 443
+  server: mlxy1.mangshe.xyz
+  port: 2060
   udp: true
-  type: vless
-  uuid: 1d6c2ce7-7b05-40cb-8779-bb1ade0899ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: t3HU7p5iYjE9Lcq2-QHTXZFhpAvoXljTNDgmFkFN-Tc
-    short-id: 99f8972e3dd5ed
-  servername: www.setel.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: mlxy1.mangshe.xyz
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
