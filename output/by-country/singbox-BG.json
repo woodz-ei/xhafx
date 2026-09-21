@@ -12,32 +12,18 @@
       "tls": {
         "enabled": true,
         "server_name": "neth9.lunariai.ru",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
-      "server": "45.9.156.103",
+      "server": "192.145.31.5",
       "server_port": 443,
-      "uuid": "e633de28-bfc0-4aca-aa67-e2e12e2c9e58",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "mzone.bg.3cloudhost.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8",
-          "short_id": ""
-        }
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
