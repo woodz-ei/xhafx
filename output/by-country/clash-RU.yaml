@@ -5,84 +5,56 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 172.67.167.77
+  server: 5.104.107.80
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /act/clip/directory?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 146.185.178.18
   port: 443
   udp: true
   type: vless
-  uuid: cc08d2d0-8a7a-4469-81d2-c43704451271
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
-  skip-cert-verify: false
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/6871nrbnl9WsdAiOUInt
-    headers:
-      Host: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 172.64.32.108
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: cdn8848.776676.xyz
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 162.159.48.32
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 193.233.91.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0cd84588-2ad1-4c69-ab82-1d3f93d5faa8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: yCKV2xr725jI0sFhm4KbttKl8b9UZrnQTXxZLN2S4BM
-    short-id: 2f86
-  servername: cdn.callibri.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 193.233.91.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: f211f0aa-db73-49f2-b2cd-5be20c034f36
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: yCKV2xr725jI0sFhm4KbttKl8b9UZrnQTXxZLN2S4BM
-    short-id: a284
-  servername: cdn.callibri.ru
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: msk.frkn.org
+  sni: itsallproxy.quattro-tech.ru
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 46.8.200.91
   port: 443
   udp: true
-  type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
+  type: vless
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  tls: true
+  servername: cf3.rumedia-cdn.com
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf3.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,9 +64,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,8 +73,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
 rules:
 - MATCH,PROXIES
