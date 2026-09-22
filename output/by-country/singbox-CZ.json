@@ -27,21 +27,26 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "95.85.230.35",
+      "server": "104.21.14.100",
       "server_port": 443,
-      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
-      "flow": "xtls-rprx-vision",
+      "uuid": "7fc7f295-b80e-4235-bb17-61e3ddc0744a",
       "tls": {
         "enabled": true,
-        "server_name": "de.oblaco.bet",
+        "server_name": "4zgcCBcB10PQYIbnWMM4nvznJ4.rOyAEhmAn5.WorKers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
-          "short_id": ""
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/AV21Gwm6013FI8fP?ed=2560",
+        "headers": {
+          "Host": "4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev"
         }
       }
     },
