@@ -13,7 +13,7 @@ proxies:
   tls: true
   servername: hub-de-03.hanvpn.cc
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: de03-grpc-8e47a
