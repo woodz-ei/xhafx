@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe",
-      "server": "103.97.91.17",
-      "server_port": 443,
-      "password": "600421cf-11d7-429f-a65b-c30397f1bc03",
-      "tls": {
-        "enabled": true,
-        "server_name": "la.freeguard.org",
-        "insecure": false
-      }
+      "type": "vmess",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+      "server": "172.233.14.17",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
