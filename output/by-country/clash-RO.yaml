@@ -5,24 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 85.204.107.178
+  server: 85.204.107.185
   port: 8443
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 167.82.101.251
-  port: 80
+  server: 185.156.44.99
+  port: 443
   udp: true
-  type: vless
-  uuid: 0e9f7d2a-2f92-475e-b484-e79568a8a1a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Mankiamtr.global.ssl.fastly.net
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: vk.com
+  skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   server: 46.28.67.55
   port: 443
