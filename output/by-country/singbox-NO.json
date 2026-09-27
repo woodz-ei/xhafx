@@ -12,33 +12,18 @@
       "password": "WxYpOK1iPSJySbVNMMJDtw"
     },
     {
-      "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 02 - xiaohe",
-      "server": "31.76.5.144",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "norw-1.failspace.top",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - xiaohe",
-        "🇳🇴 挪威 (Norway) 02 - xiaohe"
+        "🇳🇴 挪威 (Norway) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - xiaohe",
-        "🇳🇴 挪威 (Norway) 02 - xiaohe"
+        "🇳🇴 挪威 (Norway) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
