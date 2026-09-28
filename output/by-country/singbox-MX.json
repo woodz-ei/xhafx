@@ -5,28 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "93.190.9.35",
-      "server_port": 3090,
-      "uuid": "b55a33d7-83ee-416a-971e-eaaa0c928043",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
+      "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
+      "server": "45.164.20.85",
+      "server_port": 10226,
+      "uuid": "9aab8f39-ccb3-44ea-acdc-a8aefe211287"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
