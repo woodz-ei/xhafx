@@ -5,18 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
-  server: 185.47.254.251
+  server: 34.51.29.171
   port: 443
   udp: true
   type: vless
-  uuid: 878fb7f7-fc65-465e-a352-17c7216c6f3d
-  flow: xtls-rprx-vision
+  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
   tls: true
   reality-opts:
-    public-key: 6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q
-    short-id: 6c059ecfddf9b179
-  servername: gateway.icloud.com
-  client-fingerprint: random
+    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
+    short-id: dcabbf24adf88abc
+  servername: www.cloudflare.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
