@@ -19,25 +19,67 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
-      "server": "vpn-tw-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "speedtest.tinkoff.ru",
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
         "insecure": true
       }
     },
     {
       "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+      "server": "tw3.miyazono-kaori.com",
+      "server_port": 443,
+      "uuid": "4588f7a2-5df0-4f32-89d0-813a848ad593",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dlcdnets.asus.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM",
+          "short_id": "473277e2"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
+      "server": "tw4.miyazono-kaori.com",
+      "server_port": 443,
+      "uuid": "4588f7a2-5df0-4f32-89d0-813a848ad593",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dlcdnets.asus.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IqsN_cPeCP6oEXtYQMMWBiUim-r9lxq7YGj_mE3992g",
+          "short_id": "e6d59aff03e5b0"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe",
+      "server": "vpn-tw-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-tw-002.fastervpn.world\\u0026insecure=1\\u0026allowinsecure=1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 - xiaohe",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -55,6 +97,26 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 07 - xiaohe",
+      "server": "35.201.181.122",
+      "server_port": 443,
+      "uuid": "22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0",
+          "short_id": "32f66f37df3f58d2"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -62,7 +124,10 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 06 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 07 - xiaohe"
       ]
     },
     {
@@ -72,7 +137,10 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 06 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

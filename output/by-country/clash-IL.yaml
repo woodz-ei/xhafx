@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
   server: 185.95.231.233
   port: 443
@@ -29,9 +29,9 @@ proxies:
     public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
     short-id: a1b2c3d4
   servername: store.steampowered.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 以色列 (Israel) 03 - xiaohe
-  server: de2.dzvn.space
+  server: 193.202.10.137
   port: 2291
   udp: true
   type: vless
@@ -42,7 +42,7 @@ proxies:
     public-key: tLWqTzKtCCMxxOzSskvSwDB2an1bxxZ706kcNDqGNWg
     short-id: 50ace5ab34f6df9b
   servername: de2.dzvn.space
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
