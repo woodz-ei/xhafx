@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
+  server: 34.118.43.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: 16e310b7-659e-45ee-a4b0-10e0289b8621
+  tls: true
+  reality-opts:
+    public-key: -bjPqNKxxGTKCmH6dwsdGRTUzuatAowBWxyOPW4BiVQ
+    short-id: 7e7623474d41f032
+  servername: www.cloudflare.com
+  client-fingerprint: ''
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: pl.srv.vbuste-bot.com
   port: 444
   udp: true
@@ -19,39 +31,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 34.118.43.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: 16e310b7-659e-45ee-a4b0-10e0289b8621
-  tls: true
-  reality-opts:
-    public-key: -bjPqNKxxGTKCmH6dwsdGRTUzuatAowBWxyOPW4BiVQ
-    short-id: 7e7623474d41f032
-  servername: www.cloudflare.com
-  client-fingerprint: ''
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 202.78.163.237
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 31.77.13.19
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: 149.86.227.200
   port: 443
   udp: true
@@ -64,14 +44,33 @@ proxies:
     short-id: 9e15546f267baa64
   servername: waypoint.connectserverix.com
   client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: 144.31.49.47
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 94.228.161.7
+  port: 4
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MBiJEJ5VgZXVSj58CEEFZA
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 202.78.163.237
   port: 443
   udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   server: 83.168.95.145
   port: 443
@@ -99,16 +98,18 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 09 - xiaohe
-  server: 144.31.2.33
+  server: 188.225.79.44
   port: 443
   udp: true
   type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
   flow: xtls-rprx-vision
   tls: true
-  servername: pl3.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: qq
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: eh.vk.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
