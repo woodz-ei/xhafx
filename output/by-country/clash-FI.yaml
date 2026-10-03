@@ -21,8 +21,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: is1-ssl.mzstatic.com
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 144.31.212.253
   port: 443
