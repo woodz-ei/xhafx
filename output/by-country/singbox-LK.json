@@ -6,11 +6,15 @@
     {
       "type": "vless",
       "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
-      "server": "cloud.ghostdev.lk",
+      "server": "cdn.zoom.us",
       "server_port": 80,
       "uuid": "1eaed465-d720-400b-9f9f-439600a2d093",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "cloud.ghostdev.lk"
+        }
       }
     },
     {

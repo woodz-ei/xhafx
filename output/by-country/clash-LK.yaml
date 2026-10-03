@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  server: cloud.ghostdev.lk
+  server: cdn.zoom.us
   port: 80
   udp: true
   type: vless
@@ -13,6 +13,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: cloud.ghostdev.lk
 proxy-groups:
 - name: PROXIES
   type: select
