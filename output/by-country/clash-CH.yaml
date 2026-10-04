@@ -20,15 +20,17 @@ proxies:
   sni: hopp-swizland-new.mysynology.net
   skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  server: 152.67.75.161
-  port: 443
+  server: 208.69.78.217
+  port: 2053
   udp: true
-  type: hysteria2
-  password: 3a702d4d1de4949005d8431220e040fb
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
+  type: vless
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  tls: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
