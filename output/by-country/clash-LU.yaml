@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 172.67.176.3
-  port: 2053
+- name: 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
+  server: 188.42.145.180
+  port: 443
   udp: true
   type: trojan
-  password: e309e031-991e-4656-9934-44d10deb8fd8
-  sni: nimm.mpd.cc.cd
+  password: humanity
+  sni: www.volumeroot.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /0962
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
 rules:
 - MATCH,PROXIES
