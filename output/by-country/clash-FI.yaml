@@ -5,29 +5,52 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 185.166.154.111
-  port: 443
+  server: 185.103.110.68
+  port: 18283
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 144.31.27.215
+  port: 43000
+  udp: true
+  type: vless
+  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU
-    short-id: 94f32cfc
-  servername: cdn.bulkavpn.top
-  client-fingerprint: firefox
+    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
+    short-id: 568d87a47271344e
+  servername: 144.31.27.215
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 rules:
 - MATCH,PROXIES

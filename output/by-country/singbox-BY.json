@@ -4,24 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
-      "server": "188.42.145.180",
-      "server_port": 443,
-      "password": "humanity",
+      "type": "vless",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
+      "server": "89.125.96.76",
+      "server_port": 2053,
+      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
       "tls": {
         "enabled": true,
-        "server_name": "www.volumeroot.com",
+        "server_name": "wss.zazazuza.ru",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/vpn-wss/fluxor/59011/",
         "headers": {
-          "Host": "www.volumeroot.com"
+          "Host": "wss.zazazuza.ru"
         }
       }
     },
@@ -30,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

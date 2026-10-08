@@ -15,7 +15,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -27,26 +27,6 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-      "server": "eu86.vaultberry.cloud",
-      "server_port": 443,
-      "uuid": "327487f5-8665-48df-9e76-f1bee6d16557",
-      "tls": {
-        "enabled": true,
-        "server_name": "eu86.vaultberry.cloud",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M",
-          "short_id": "1ed136481e0ede74"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
       "server": "157.228.155.185",
       "server_port": 443,
       "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
@@ -67,21 +47,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-      "server": "31.59.210.24",
-      "server_port": 2087,
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
+      "server": "31.59.210.37",
+      "server_port": 443,
       "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
       "tls": {
         "enabled": true,
         "server_name": "www.yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "W2OLbQ682PLJ9yHQ21Q0nPJk9U8RuL5YnlP-U1fdQzI",
-          "short_id": "a11023050f134216"
+          "public_key": "5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4",
+          "short_id": "6dbf4931096f9890"
         }
       },
       "transport": {
@@ -91,15 +71,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
-      "server": "84.235.244.108",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
+      "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
+      "server": "146.70.102.82",
+      "server_port": 443,
+      "uuid": "31fd2fde-ca69-450e-8c03-eaad819b06b9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.datadoghq.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k",
+          "short_id": "002fb4ec7b3088cc"
         }
       }
     },
