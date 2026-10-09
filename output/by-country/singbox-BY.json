@@ -5,21 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 01 - xiaohe",
-      "server": "194.61.31.126",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
+      "server": "89.125.96.79",
       "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
+      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "wss.zazazuza.ru",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vpn-wss/fluxor/59011/",
+        "headers": {
+          "Host": "wss.zazazuza.ru"
         }
       }
     },
@@ -28,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  server: 185.103.110.66
+  port: 18280
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -15,8 +22,28 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 185.103.110.68
+  port: 18283
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 65.108.3.59
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: 144.31.27.215
   port: 43000
   udp: true
@@ -28,22 +55,20 @@ proxies:
     public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
     short-id: 568d87a47271344e
   servername: 144.31.27.215
-  client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: vpn.cyrionflare.xyz
-  port: 2087
+  client-fingerprint: random
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: feow.nomush.ir
+  port: 11497
   udp: true
   type: vless
-  uuid: 15f434b8-aaec-4306-98c9-dd8f5ef608d4
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 194.87.6.192
-  port: 2097
-  udp: true
-  type: trojan
-  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
-  sni: ger6.fytpn.com
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  uuid: 2c5f2d6e-d683-49f7-a12b-a95460b90a92
+  tls: true
+  reality-opts:
+    public-key: J3DhtzId04tRrOF9HmIxpv6QOGY1g6j2wJ_UtVKmimk
+    short-id: b0063cec752e829a
+  servername: dynu.com
+  client-fingerprint: qq
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
   server: van2.ragnarok-it.xyz
   port: 8446
   udp: true
@@ -66,6 +91,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,5 +103,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 rules:
 - MATCH,PROXIES
