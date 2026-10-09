@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 77.74.123.109
+  server: 77.74.123.107
   port: 8443
   udp: true
   type: hysteria2
@@ -13,19 +13,6 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 46.183.16.4
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 69d76969-4c52-40f5-ac1d-303571634362
-  tls: true
-  servername: ro1.b0w.ir
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   server: 46.28.67.55
   port: 443
   udp: true
@@ -45,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
 rules:
 - MATCH,PROXIES
