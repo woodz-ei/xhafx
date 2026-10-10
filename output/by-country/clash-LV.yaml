@@ -5,17 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
-  server: 138.124.180.137
+  server: 31.57.106.241
   port: 443
   udp: true
   type: vless
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  uuid: a4801105-c0c7-4cab-87c6-f257ff2afc09
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
+    public-key: 4SJB--DChFNhmOUz0-BZK2dS3GhZ1yZwMVIhmpobB0o
+    short-id: 44f7c5615039ae1b
+  servername: www.lmt.lv
   client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   server: 216.173.71.43
@@ -31,6 +31,14 @@ proxies:
   servername: lv.nztvpn.com
   client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  server: 104.165.205.21
+  port: 9443
+  udp: true
+  type: hysteria2
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: true
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   server: 188.220.205.44
   port: 2097
   udp: true
@@ -46,6 +54,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +63,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
