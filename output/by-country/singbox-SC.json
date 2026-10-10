@@ -6,21 +6,21 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-      "server": "45.13.186.133",
-      "server_port": 443,
-      "uuid": "e937b92c-701f-420e-a621-3eb3b75de467",
+      "server": "hk3n.wxgqlfx.vip",
+      "server_port": 35193,
+      "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "worki.puffixhosting.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "UXJLPiZERc6kP5cJ40BJVlmobrFc2ztp2aHkK1P-UAU",
-          "short_id": "0a816eb58c4e3fd9"
+          "public_key": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
+          "short_id": "e8daed2d"
         }
       }
     },
