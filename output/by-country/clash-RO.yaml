@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 77.74.123.107
+  server: 77.74.123.99
   port: 8443
   udp: true
   type: hysteria2
@@ -23,12 +23,32 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
+  server: 82.152.132.120
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3e0c1fbf-467a-49d7-abd2-3a158628f3d0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Aj6Op88j_eYXxoBw095KS_NnKCBm5uwa874uumXdiDQ
+    short-id: ef7c4e4302bd52d7
+  servername: ro1.gigobingo.ru
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   server: 194.68.44.42
   port: 64546
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: U83u9OGpvSatIUW7LsWffr
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+  server: 154.46.31.106
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +57,8 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,5 +67,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,42 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: 154.37.216.186
-  port: 443
-  udp: true
-  type: vless
-  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
-    short-id: f39ad9d9eb26df47
-  servername: www.bing.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: 46.29.166.27
-  port: 20221
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   server: 45.207.157.24
   port: 9443
   udp: true
@@ -53,14 +17,7 @@ proxies:
     short-id: b390142456517acc
   servername: www.amazon.com
   client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  server: 176.32.35.102
-  port: 20111
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   server: 34.92.19.135
   port: 443
   udp: true
@@ -71,16 +28,40 @@ proxies:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
     short-id: 56d4e7ae4f86fa39
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+  client-fingerprint: edge
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  sni: https://t.me/wangcai2ⁿß
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+  server: 85322329-tn2tc0-to3dy2-nx3b.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 32315324-cf6b-11ed-979b-f23c9164ca5d
+  sni: 85322329-tn2tc0-to3dy2-nx3b.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
   server: full-ox.rooster465.autos
   port: 443
   udp: true
@@ -88,15 +69,36 @@ proxies:
   password: UX82473651
   sni: full-ox.rooster465.autos
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
-  server: mz.hkychina.com
-  port: 8443
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+  server: 154.37.216.186
+  port: 443
   udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
+  type: vless
+  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
+    short-id: f39ad9d9eb26df47
+  servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: jmp1.907737.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+    headers:
+      Host: jmp1.907737.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   server: 82.29.36.250
   port: 443
   udp: true
@@ -108,7 +110,17 @@ proxies:
     public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
     short-id: 09353d6dc5b789
   servername: aws.amazon.com
-  client-fingerprint: chrome
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
+  server: nas.aizhzo.com
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
   server: 3696b38bsg.murphyweb.sbs
   port: 32134
@@ -121,23 +133,15 @@ proxies:
     public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
     short-id: 6c6c7c97
   servername: buylite.music.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
-  server: 47.243.194.125
-  port: 443
+  server: mz.hkychina.com
+  port: 8443
   udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: nycqg19zkwacpm1b.v.3dns.vip
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: nycqg19zkwacpm1b.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
