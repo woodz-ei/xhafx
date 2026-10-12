@@ -5,17 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 178.214.113.10
-  port: 8443
+  server: 185.252.177.216
+  port: 443
   udp: true
   type: vless
-  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
+  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
+  flow: xtls-rprx-vision
   tls: true
-  servername: n2.vimeostream.online
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: nl1grpc
+  reality-opts:
+    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
+    short-id: 9ea74b83f4993ca9
+  servername: est-1.ardesnode.ru
+  client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 185.31.242.61
   port: 443
@@ -38,43 +39,18 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  server: nl-1.wizard.select
+  server: 94.183.170.135
   port: 443
   udp: true
   type: vless
-  uuid: b118fc0a-c535-11f1-9902-a337233c6cda
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Zjex_cLrMyB7UKgGP8iUZaUtKWuDJnpylpf1WUcfOA0
-    short-id: 080c8affc0204b46
-  servername: nl-1.wizard.select
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  server: 185.209.15.100
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
-  tls: true
-  servername: n1.vimeostream.online
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: nl1grpc
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  server: 87.228.33.153
-  port: 6443
-  udp: true
-  type: vless
-  uuid: 7b859f9e-0e6a-475f-b5e3-5d671b043164
-  flow: xtls-rprx-vision
-  tls: true
-  servername: for.cloudgamings.org
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,8 +60,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,7 +69,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
 rules:
 - MATCH,PROXIES
