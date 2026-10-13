@@ -5,15 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: admin.wwwinternetvideo.click
+  server: 217.60.33.215
   port: 443
   udp: true
   type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
+  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+  sni: streambox.wwwinternetvideo.click
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: pl-1-1.unturned-rust-dead.lol
+  server: 80.47.12.94
   port: 443
   udp: true
   type: vless
@@ -24,7 +24,20 @@ proxies:
   servername: pl-1-1.unturned-rust-dead.lol
   client-fingerprint: random
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 31.77.13.19
+  server: 177.1.192.72
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
+    short-id: 46455ff0
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 2.26.231.218
   port: 2063
   udp: true
   type: vless
@@ -35,27 +48,23 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 2.26.225.89
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  tls: true
+  servername: pl.flen-vpn.xyz
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   server: 144.31.49.47
   port: 443
   udp: true
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 177.1.192.74
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
-    short-id: 770618b6
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,6 +75,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
+  - 🇵🇱 波兰 (Poland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,5 +86,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
+  - 🇵🇱 波兰 (Poland) 06 - xiaohe
 rules:
 - MATCH,PROXIES
