@@ -18,8 +18,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: fujrdt.d6f54hd1j.cc
 proxy-groups:
 - name: PROXIES
   type: select
