@@ -5,20 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 109.176.239.123
-  port: 443
+  server: 45.205.27.78
+  port: 10443
   udp: true
-  type: vless
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  tls: true
-  servername: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /Telegram-WangCai2üá®üá≥
-    headers:
-      Host: notls.lukongtou.eu.org
+  type: trojan
+  password: 8c3db80a-0aba-4c22-84e5-e8b7539db6f7
+  sni: 45.205.27.78
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

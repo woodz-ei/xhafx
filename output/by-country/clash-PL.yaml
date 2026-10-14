@@ -18,29 +18,28 @@ proxies:
   servername: pl.golangwikito.cfd
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: pl4.h1cloud.net
+  server: 201.10.91.196
   port: 25080
   udp: true
   type: vless
-  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
   tls: true
   reality-opts:
     public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
     short-id: 103d1dc5ed8eaf4c
   servername: www.ceneo.pl
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 177.1.192.72
-  port: 443
+  server: 31.77.13.19
+  port: 2063
   udp: true
   type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
-    short-id: 46455ff0
-  servername: addons.mozilla.org
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 177.1.192.74
@@ -54,19 +53,17 @@ proxies:
     public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
     short-id: 770618b6
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: randomized
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 31.77.13.19
-  port: 2063
+  server: pl9.aiage.work
+  port: 443
   udp: true
   type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: chrome
+  servername: pl9.aiage.work
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   server: 54.37.131.126
   port: 80
@@ -81,30 +78,19 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  server: 37.18.14.145
-  port: 4510
-  udp: true
-  type: vless
-  uuid: c3db7657-88ce-42a6-b998-1e0364b277ac
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM
-    short-id: 2d0c188798bae174
-  servername: 9c99da.usecache.net
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
-  server: 77.110.105.122
+  server: 177.1.192.72
   port: 443
   udp: true
   type: vless
-  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
   flow: xtls-rprx-vision
   tls: true
-  servername: co-pl.speedtec.ru
-  skip-cert-verify: false
-  client-fingerprint: random
-- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
+  reality-opts:
+    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
+    short-id: 46455ff0
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
+- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
   server: 2.26.225.89
   port: 8443
   udp: true
@@ -126,7 +112,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
-  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -140,6 +125,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
-  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 rules:
 - MATCH,PROXIES
