@@ -5,15 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
-      "server": "free.sahanwickramasinghe.me",
-      "server_port": 80,
-      "uuid": "fcdb24e3-5e66-4c45-b89e-ac9441f4dcda",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
+      "server": "45.158.185.172",
+      "server_port": 443,
+      "uuid": "49e4b91a-bd15-4e54-9b51-41a3380afb51",
+      "tls": {
+        "enabled": true,
+        "server_name": "z5n1.vpnpolar.online",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/beeline",
         "headers": {
-          "Host": "free.sahanwickramasinghe.me"
+          "Host": "z5n1.vpnpolar.online"
         }
       }
     },
@@ -22,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
