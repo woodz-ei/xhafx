@@ -16,14 +16,6 @@ proxies:
   ws-opts:
     path: /
 - name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: in.tronsg.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: in.tronsg.com
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 03 - xiaohe
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -35,6 +27,14 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: random
+- name: 🇮🇳 印度 (India) 03 - xiaohe
+  server: in.tronsg.com
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: in.tronsg.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
