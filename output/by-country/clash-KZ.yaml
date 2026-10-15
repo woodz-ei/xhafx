@@ -5,17 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: 83.222.23.81
-  port: 38065
+  server: fi1server.rabstvo.shop
+  port: 443
   udp: true
-  type: vless
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
-  tls: true
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-    short-id: fa
-  servername: yahoo.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: 9yOIR2_QAChKs26rYaiX_aoNnOALd0aU
+  sni: fi1server.rabstvo.shop
+  skip-cert-verify: false
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   server: 109.248.170.119
   port: 13447
@@ -29,37 +25,30 @@ proxies:
   servername: yahoo.com
   client-fingerprint: chrome
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
-  server: 91.217.10.26
-  port: 443
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
   udp: true
-  type: vless
-  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  servername: tcpkz1.figurapn.ru
-  client-fingerprint: firefox
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  server: 77.73.232.61
-  port: 19747
+  server: 83.222.23.81
+  port: 38065
   udp: true
   type: vless
-  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
   tls: true
   reality-opts:
-    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
-    short-id: '2001'
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    short-id: fa
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
-  server: fi1server.rabstvo.shop
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 9yOIR2_QAChKs26rYaiX_aoNnOALd0aU
-  sni: fi1server.rabstvo.shop
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,7 +58,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,6 +67,5 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
 rules:
 - MATCH,PROXIES
