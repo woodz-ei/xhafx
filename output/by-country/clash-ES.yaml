@@ -17,14 +17,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  server: es2.xiaoliyu.cyou
-  port: 18333
-  udp: true
-  type: hysteria2
-  password: 8b64b840-a48d-4ac0-b10f-8f7d7081a0f1
-  sni: es2.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   server: 83.147.18.3
   port: 443
   udp: true
@@ -36,7 +28,7 @@ proxies:
     public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
     short-id: fd8cf7e1173f0edb
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,7 +36,6 @@ proxy-groups:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - xiaohe
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,6 +43,5 @@ proxy-groups:
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - xiaohe
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 03 - xiaohe
 rules:
 - MATCH,PROXIES
