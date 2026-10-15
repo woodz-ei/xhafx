@@ -28,18 +28,62 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+      "server": "nimm.mpd.cc.cd",
+      "server_port": 2053,
+      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
+      "tls": {
+        "enabled": true,
+        "server_name": "nimm.mpd.cc.cd",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/0962"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
+      "server": "45.133.151.176",
+      "server_port": 25375,
+      "uuid": "ec572cf0-1337-4c51-b4ec-ff2f538c1f4c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PdiXtqIEtNpVRKgB1WCKnmIOC7yJ-VR4uUe1uYjcqXM",
+          "short_id": "8e2a0cd6de5dc50a"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "05195f917c82"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

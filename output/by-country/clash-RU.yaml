@@ -5,7 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 147.45.60.160
+  server: 213.165.56.102
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
+    short-id: 57e7977c9011061c
+  servername: freede.aiage.work
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 89.125.103.208
+  port: 20111
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 994ccabf6f0950d6
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 91.196.32.121
+  port: 2443
+  udp: true
+  type: vless
+  uuid: c635b5f6-b5ea-4e57-927f-75860b0cb984
+  tls: true
+  reality-opts:
+    public-key: cnmFHIiPbBDSOiui-ZJw8JIWSa4UARyNrHhBp3p7sBc
+    short-id: f1b2c3d4
+  servername: fonts.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 153.80.241.206
   port: 8444
   udp: true
   type: vless
@@ -14,18 +49,47 @@ proxies:
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
   servername: github.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: hy9.shamanfun.ru
-  port: 1443
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  server: 194.87.118.184
+  port: 2053
   udp: true
   type: hysteria2
-  password: c635b5f6-b5ea-4e57-927f-75860b0cb984
-  sni: hy9.shamanfun.ru
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  sni: 194.87.118.184
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  server: 194.87.118.184
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  sni: match-stream.lovkisport.blog
   skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  server: spainspeedboostjbl88.qcloud.surf
+  port: 27313
+  udp: true
+  type: hysteria2
+  password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
+  sni: spainspeedboostjbl88.qcloud.surf
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  server: 5.42.99.64
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +97,12 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,5 +110,11 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
 rules:
 - MATCH,PROXIES
