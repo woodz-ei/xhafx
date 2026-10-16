@@ -5,49 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  server: 35.199.90.53
-  port: 443
+  server: platform108.golnamakcert.top
+  port: 80
   udp: true
   type: vless
-  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
-  tls: true
-  reality-opts:
-    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
-    short-id: b62a4da6cd1c4dd6
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.halalkhor.info
 - name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  server: platform102.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇧🇷 巴西 (Brazil) 03 - xiaohe
-  server: platform106.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: platform106.halalkhor.info
-- name: 🇧🇷 巴西 (Brazil) 04 - xiaohe
-  server: platform107.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform107
-- name: 🇧🇷 巴西 (Brazil) 05 - xiaohe
   server: platform101.golnamakcert.top
   port: 80
   udp: true
@@ -58,6 +26,72 @@ proxies:
     path: /platform101
     headers:
       Host: platform101.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 03 - xiaohe
+  server: platform117.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 04 - xiaohe
+  server: platform118.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 05 - xiaohe
+  server: platform107.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 06 - xiaohe
+  server: platform106.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 07 - xiaohe
+  server: platform103.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 08 - xiaohe
+  server: platform102.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +102,9 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 03 - xiaohe
   - 🇧🇷 巴西 (Brazil) 04 - xiaohe
   - 🇧🇷 巴西 (Brazil) 05 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 06 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 07 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,5 +115,8 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 03 - xiaohe
   - 🇧🇷 巴西 (Brazil) 04 - xiaohe
   - 🇧🇷 巴西 (Brazil) 05 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 06 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 07 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 08 - xiaohe
 rules:
 - MATCH,PROXIES
