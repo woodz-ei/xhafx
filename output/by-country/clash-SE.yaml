@@ -5,21 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: se1.h1cloud.net
-  port: 26128
+  server: 5.178.109.174
+  port: 14430
   udp: true
   type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: mui.firzav.ir
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ZJdYmMiJBWkbTZ5nExBRpQ_f7uIG7wL4
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: swe.wizard.select
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: sACiHit5lNtPRK_eFP6jT8dMPUZ4kQRsfPj_LL5p7Uk
-    short-id: 13ac4d3bdadf1ea1
-  servername: www.icloud.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: df50147201bf
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
+    short-id: 3b20e438da99
+  servername: swe.wizard.select
+  client-fingerprint: qq
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -30,11 +46,11 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   server: hy-se.bypassme.online
   port: 443
   udp: true
@@ -42,6 +58,18 @@ proxies:
   password: e625f8ef-f935-4c7d-a259-0f154b6842fd
   sni: hy-se.bypassme.online
   skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: 88.216.223.66
+  port: 443
+  udp: true
+  type: vless
+  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: tcpswed1.figurapn.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +78,9 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +89,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,60 +5,53 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: sth.free-outline.giize.com
-  port: 1081
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 6qmp91myp2jj13dt
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: 202.146.222.29
+  server: 154.37.216.186
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: "https://t.me/wangcai2ð\x9F\x87ð\x9F\x87"
-  skip-cert-verify: true
+  type: vless
+  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
+    short-id: f39ad9d9eb26df47
+  servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  server: 82.29.36.250
+  port: 443
+  udp: true
+  type: vless
+  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
+    short-id: ac3342a709db
+  servername: aws.amazon.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  server: 6jdvarazgu3qqr6q.v.3dns.vip
+  server: 202.146.222.29
   port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 6jdvarazgu3qqr6q.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6jdvarazgu3qqr6q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  server: nas.aizhzo.com
-  port: 5010
   udp: true
   type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  server: qtkdr8jxe3wefxjm.v.3dns.vip
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+  server: 8.217.13.103
   port: 443
   udp: true
   type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   tls: true
@@ -67,7 +60,63 @@ proxies:
   network: ws
   ws-opts:
     path: /ws-vmess
+    headers:
+      Host: qtkdr8jxe3wefxjm.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  server: 8.217.254.88
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  server: 8.218.195.61
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: ex1ogt73nzpqkac2.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ex1ogt73nzpqkac2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+  server: 47.243.194.125
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+  server: 103.85.27.30
+  port: 49467
+  udp: true
+  type: vless
+  uuid: 44059c36-91ab-47f4-d8ca-a43dafd788b2
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -83,23 +132,20 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
-  server: 2b9hwy8ocx7q74nm.v.3dns.vip
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
+  server: 3696b38bsg.murphyweb.sbs
+  port: 32134
   udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
+  flow: xtls-rprx-vision
   tls: true
-  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+  reality-opts:
+    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
+    short-id: 6c6c7c97
+  servername: buylite.music.apple.com
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
   server: hk2.998998.best
   port: 443
   udp: true
@@ -115,48 +161,36 @@ proxies:
     path: /asivewritten
     headers:
       Host: server15.9966338.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
-  server: 154.37.216.186
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
+  server: sth.free-outline.giize.com
+  port: 1081
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 6qmp91myp2jj13dt
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
+  server: 207.56.137.51
   port: 443
   udp: true
   type: vless
-  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
+  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
-    short-id: f39ad9d9eb26df47
-  servername: www.bing.com
+    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
+    short-id: f713561d
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
-  server: 3696b38bsg.murphyweb.sbs
-  port: 32134
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - xiaohe
+  server: nas.aizhzo.com
+  port: 5010
   udp: true
-  type: vless
-  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
-    short-id: 6c6c7c97
-  servername: buylite.music.apple.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
-  server: vah4urdzl3jdx5r2.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: vah4urdzl3jdx5r2.v.3dns.vip
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 proxy-groups:
 - name: PROXIES
   type: select
@@ -174,6 +208,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -191,5 +228,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 15 - xiaohe
 rules:
 - MATCH,PROXIES
