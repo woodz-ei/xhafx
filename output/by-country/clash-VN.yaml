@@ -16,7 +16,7 @@ proxies:
     public-key: KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw
     short-id: a46bb5972cf50671
   servername: bilibili-vn.biliimg.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
