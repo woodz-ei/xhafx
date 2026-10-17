@@ -31,7 +31,7 @@ proxies:
   servername: hu1.aiage.work
   client-fingerprint: firefox
 - name: 🇭🇺 匈牙利 (Hungary) 03 - xiaohe
-  server: hu1.aiage.work
+  server: 85.155.242.38
   port: 443
   udp: true
   type: vless
