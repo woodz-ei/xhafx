@@ -5,21 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
-  server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
-  server: 195.238.126.20
-  port: 9002
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
-  server: 212.24.105.101
+  server: b58e68t.lt1.h1clayd.click
   port: 443
   udp: true
   type: vless
@@ -36,15 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
 rules:
 - MATCH,PROXIES

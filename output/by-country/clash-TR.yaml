@@ -5,26 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: bot.powerpanel.space
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 83e029c0-b4ea-4e91-a945-dfb72c01f24b
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 78.135.73.47
-  port: 443
-  udp: true
-  type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: 172.67.176.3
+  server: 104.21.48.18
   port: 2053
   udp: true
   type: trojan
@@ -34,6 +15,12 @@ proxies:
   network: ws
   ws-opts:
     path: /0962
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: 136.148.64.229
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 0f32f9e7-d83c-4052-9a5e-103ed967b11c
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,7 +28,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,6 +35,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 rules:
 - MATCH,PROXIES
