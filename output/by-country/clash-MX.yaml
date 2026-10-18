@@ -4,23 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  server: 13.135.17.74
-  port: 22222
+- name: 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
+  server: 64.177.90.30
+  port: 8388
   udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  type: ss
+  cipher: aes-256-gcm
+  password: BWyPPTusFKhGgzKh
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
 rules:
 - MATCH,PROXIES
