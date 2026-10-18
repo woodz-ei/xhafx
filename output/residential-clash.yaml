@@ -4,17 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  server: hinet1.2yly.com
-  port: 24215
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  server: 206.1.100.148
+  port: 8443
   udp: true
   type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  uuid: 53373a04-2dd2-472e-af5d-d55fbffa7dbd
   tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: qq
+  servername: game.jafarghasemivip.ir
+  skip-cert-verify: false
+  client-fingerprint: safari
 - name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
   server: test.keoplentuio.xyz
   port: 2053
@@ -22,18 +21,22 @@ proxies:
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 - name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  server: 49.254.204.133
-  port: 1774
+  server: 183.109.131.75
+  port: 20086
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
 - name: AUTO
@@ -41,7 +44,7 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
 rules:
