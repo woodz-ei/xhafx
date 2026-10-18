@@ -5,7 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 104.21.48.18
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: 172.67.176.3
   port: 2053
   udp: true
   type: trojan
@@ -15,12 +27,6 @@ proxies:
   network: ws
   ws-opts:
     path: /0962
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 136.148.64.229
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 0f32f9e7-d83c-4052-9a5e-103ed967b11c
 proxy-groups:
 - name: PROXIES
   type: select
