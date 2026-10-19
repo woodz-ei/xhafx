@@ -6,51 +6,55 @@ log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
   server: 149.102.132.184
-  port: 80
+  port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: g5h5jleTRSyO3Rk4
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   server: 149.102.132.184
-  port: 443
+  port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: g5h5jleTRSyO3Rk4
 - name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  server: 141.98.101.181
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
   server: 146.70.61.37
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
+  server: 141.98.101.181
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
+  server: 146.70.46.214
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
+  server: 146.70.46.199
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
   server: 191.215.46.37
   port: 443
   udp: true
   type: hysteria2
   password: b3a11068-1a7e-4643-85de-7c82cce46943
-  sni: uk.shamanapp.online
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
-  server: 186.190.211.188
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: 186.190.211.188
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
+  sni: uk-d9ca48498a.shamanapp.online
+  skip-cert-verify: false
+- name: 🇬🇧 英国 (United Kingdom) 08 - xiaohe
   server: 31.59.217.164
   port: 443
   udp: true
@@ -63,32 +67,41 @@ proxies:
     short-id: 1625a2a79d01328f
   servername: www.adobe.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 08 - xiaohe
-  server: 191.44.108.31
-  port: 443
+- name: 🇬🇧 英国 (United Kingdom) 09 - xiaohe
+  server: 98.98.207.163
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 10 - xiaohe
+  server: 146.70.61.18
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
+  server: 98.98.142.161
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
+  server: 138.124.125.193
+  port: 10444
   udp: true
   type: vless
-  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
+  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU
-    short-id: 3ba10d9ce34380c9
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 09 - xiaohe
-  server: 151.243.101.126
-  port: 51105
-  udp: true
-  type: vless
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  tls: true
-  reality-opts:
-    public-key: _DxG0K_Hvw7qfGTtfeYm95vCBS_3E2x1gzVzfJqQGjE
-    short-id: abcd1234
-  servername: apple.com
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 10 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
   server: 193.188.21.253
   port: 14430
   udp: true
@@ -99,36 +112,6 @@ proxies:
     path: /vless
     headers:
       Host: 193.188.21.253
-- name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
-  server: connect.hondamotor.site
-  port: 10002
-  udp: true
-  type: vless
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
-- name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
-  server: 213.176.92.168
-  port: 14430
-  udp: true
-  type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 213.176.92.168
-- name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
-  server: 213.176.92.168
-  port: 10444
-  udp: true
-  type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: safari
 - name: 🇬🇧 英国 (United Kingdom) 14 - xiaohe
   server: 193.188.21.253
   port: 10444
@@ -153,8 +136,14 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
     short-id: 9922313fffed1c63
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 16 - xiaohe
+  server: connect.hondamotor.site
+  port: 10002
+  udp: true
+  type: vless
+  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+- name: 🇬🇧 英国 (United Kingdom) 17 - xiaohe
   server: 46.250.240.80
   port: 2053
   udp: true
@@ -166,52 +155,26 @@ proxies:
     short-id: 4cc9dc65f7770115
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 17 - xiaohe
-  server: 138.124.125.193
-  port: 10444
+- name: 🇬🇧 英国 (United Kingdom) 18 - xiaohe
+  server: 107.181.151.241
+  port: 443
   udp: true
   type: vless
-  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
+  uuid: ee39fb11-56a3-4ee7-9e7c-35a4235bd30e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: ads.x5.ru
+    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+    short-id: b27ba098687b
+  servername: www.tradingview.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 18 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 19 - xiaohe
   server: 94.156.250.148
   port: 7001
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
-- name: 🇬🇧 英国 (United Kingdom) 19 - xiaohe
-  server: server.slavkiti.monster
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: ee1716767f9b
-  servername: www.tradingview.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 20 - xiaohe
-  server: 144.48.11.97
-  port: 43000
-  udp: true
-  type: vless
-  uuid: 4799abf0-d0d9-4a46-9c31-b1f76ae00e1e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lmT0SFJL1A8_ariRWL65dhShaqFbpitjGanv7EFnoR0
-    short-id: 725e6ea0
-  servername: 144.48.11.97
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -236,7 +199,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 17 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 18 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 19 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 20 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -261,6 +223,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 17 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 18 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 19 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 20 - xiaohe
 rules:
 - MATCH,PROXIES

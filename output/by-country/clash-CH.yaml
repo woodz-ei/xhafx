@@ -40,28 +40,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  server: 116.204.164.60
-  port: 7443
-  udp: true
-  type: vless
-  uuid: c676be7d-b481-4bba-88d0-65855e09dc67
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  server: 132.243.175.144
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,8 +48,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,7 +56,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
