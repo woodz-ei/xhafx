@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
-  server: 79.139.59.46
+- name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  server: 83.147.18.75
   port: 443
   udp: true
   type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg
-    short-id: f8379ce795f2e5ed
-  servername: hu1.aiage.work
-  client-fingerprint: firefox
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: 7f1e29593aa94ad1
+  servername: www.bing.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
 rules:
 - MATCH,PROXIES
