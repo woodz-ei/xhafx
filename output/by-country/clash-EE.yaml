@@ -17,32 +17,17 @@ proxies:
     short-id: 7271129440ade8fa
   servername: login.sakhweb.fyi
   client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: 132.243.66.17
-  port: 443
-  udp: true
-  type: vless
-  uuid: 697386bb-c121-4933-b426-ad701cae90d8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nH6ZEj8w9tsiRI7_0dco42KKil48EksTnuCs1OcN2B0
-    short-id: 2036c1b147c5d31e
-  servername: ee.shapka-global.com
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 rules:
 - MATCH,PROXIES
