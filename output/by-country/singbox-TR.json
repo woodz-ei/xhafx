@@ -4,15 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-      "server": "ie1.dedushka.top",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "153.56.210.134",
+      "server_port": 34121,
+      "password": "c8ed6cd1-6566-4f7a-819e-1c55b2b360c9",
       "tls": {
         "enabled": true,
-        "server_name": "ie1.dedushka.top",
+        "server_name": "www.bing.com",
         "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "9a33460c-b037-47aa-a606-d04211f4e0ec"
       }
     },
     {
@@ -20,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
