@@ -27,29 +27,6 @@ proxies:
     public-key: f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg
   servername: www.nokia.com
   client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 65.109.209.239
-  port: 16911
-  udp: true
-  type: vmess
-  uuid: c5f59d68-5a26-40b8-a086-2f531e06737c
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 2.29.101.158
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
-  tls: true
-  reality-opts:
-    public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
-    short-id: b3c9d0c6bdd114a6
-  servername: 36a466g.fi1.h1clayd.click
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 0adb9638509b
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,8 +34,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,7 +41,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 rules:
 - MATCH,PROXIES

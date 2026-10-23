@@ -5,49 +5,49 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
-  server: de2.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de2.dedushka.top
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 02 - xiaohe
-  server: 130.17.25.67
-  port: 443
+  server: 172.67.130.187
+  port: 2083
   udp: true
   type: vless
-  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
-  flow: xtls-rprx-vision
+  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
   tls: true
-  reality-opts:
-    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
-    short-id: 9e4eced6e98ed4d4
-  servername: github.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 03 - xiaohe
-  server: 57.129.41.216
-  port: 80
-  udp: true
-  type: vless
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  servername: fans.liverpool.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vless/
+    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 04 - xiaohe
-  server: 163.245.42.48
+      Host: fans.liverpool.qzz.io
+- name: 🇩🇪 德国 (Germany) 02 - xiaohe
+  server: 162.159.153.4
   port: 443
   udp: true
   type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: ios
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+- name: 🇩🇪 德国 (Germany) 03 - xiaohe
+  server: 185.176.204.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 04 - xiaohe
+  server: 213.202.208.199
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 - name: 🇩🇪 德国 (Germany) 05 - xiaohe
   server: 163.245.42.48
   port: 443
@@ -61,22 +61,7 @@ proxies:
   servername: mother-earth.fyi
   client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 06 - xiaohe
-  server: de9.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de9.dedushka.top
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 07 - xiaohe
-  server: 185.226.172.8
-  port: 8008
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 08 - xiaohe
-  server: edge.bookmai.com
+  server: 163.245.42.48
   port: 443
   udp: true
   type: vless
@@ -87,82 +72,97 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: mother-earth.fyi
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 09 - xiaohe
-  server: 188.241.241.236
+- name: 🇩🇪 德国 (Germany) 07 - xiaohe
+  server: 185.226.172.8
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 08 - xiaohe
+  server: 188.241.241.117
   port: 443
   udp: true
   type: trojan
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de10.dedushka.top
+  sni: de8.dedushka.top
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 10 - xiaohe
+- name: 🇩🇪 德国 (Germany) 09 - xiaohe
   server: 146.70.20.147
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 11 - xiaohe
-  server: 91.107.247.173
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  tls: true
-  servername: sino.bestsellers1.site
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 12 - xiaohe
-  server: test.wecantos.site
-  port: 20000
-  udp: true
-  type: vless
-  uuid: ca59a503-db23-44af-9879-49747d8da98f
-- name: 🇩🇪 德国 (Germany) 13 - xiaohe
-  server: 185.176.204.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国 (Germany) 14 - xiaohe
-  server: connect.wecantos.site
-  port: 10000
-  udp: true
-  type: vless
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-- name: 🇩🇪 德国 (Germany) 15 - xiaohe
-  server: 103.91.147.212
+- name: 🇩🇪 德国 (Germany) 10 - xiaohe
+  server: 130.17.25.67
   port: 443
   udp: true
   type: vless
-  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
+  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: de.ozon.ru
-  client-fingerprint: ''
+    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
+    short-id: 9e4eced6e98ed4d4
+  servername: github.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 11 - xiaohe
+  server: de4.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de4.dedushka.top
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 12 - xiaohe
+  server: 188.241.241.235
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de9.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 13 - xiaohe
+  server: de7.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de7.dedushka.top
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 14 - xiaohe
+  server: de12.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de12.dedushka.top
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 15 - xiaohe
+  server: 5.45.100.100
+  port: 51511
+  udp: true
+  type: hysteria2
+  password: miaoge110
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 16 - xiaohe
-  server: 31.76.11.83
-  port: 15731
+  server: 188.241.241.122
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de2.dedushka.top
+  skip-cert-verify: false
 - name: 🇩🇪 德国 (Germany) 17 - xiaohe
-  server: 31.76.11.83
-  port: 22366
+  server: de5.dedushka.top
+  port: 443
   udp: true
-  type: vmess
-  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
-  alterId: 0
-  cipher: auto
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de5.dedushka.top
+  skip-cert-verify: false
 - name: 🇩🇪 德国 (Germany) 18 - xiaohe
   server: 188.241.241.49
   port: 443
@@ -172,6 +172,34 @@ proxies:
   sni: de6.dedushka.top
   skip-cert-verify: false
 - name: 🇩🇪 德国 (Germany) 19 - xiaohe
+  server: 18.153.65.67
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 20 - xiaohe
+  server: 91.107.247.173
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  tls: true
+  servername: sino.bestsellers1.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 21 - xiaohe
+  server: de10.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de10.dedushka.top
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 22 - xiaohe
   server: 46.225.46.136
   port: 2087
   udp: true
@@ -185,41 +213,71 @@ proxies:
     path: /hokm
     headers:
       Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 20 - xiaohe
+- name: 🇩🇪 德国 (Germany) 23 - xiaohe
+  server: edge.bookmai.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 24 - xiaohe
+  server: connect.wecantos.site
+  port: 10000
+  udp: true
+  type: vless
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+- name: 🇩🇪 德国 (Germany) 25 - xiaohe
+  server: test.wecantos.site
+  port: 20000
+  udp: true
+  type: vless
+  uuid: ca59a503-db23-44af-9879-49747d8da98f
+- name: 🇩🇪 德国 (Germany) 26 - xiaohe
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 27 - xiaohe
   server: 18.193.79.104
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
+  sni: vpn-de-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 21 - xiaohe
-  server: de5.dedushka.top
+- name: 🇩🇪 德国 (Germany) 28 - xiaohe
+  server: uiuxtestsdcv-development-r6dg9.lucity.app
   port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de5.dedushka.top
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 22 - xiaohe
-  server: p2real22.greewebservices.ir
-  port: 1320
   udp: true
   type: vless
-  uuid: 2582857a-632b-4c4e-9b67-96213cbaf58c
+  uuid: 58b06206-cd53-23d6-279a-0f0dd259cb0a
   tls: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: 9b60d3
-  servername: play.googleapis.com
-  client-fingerprint: ios
-- name: 🇩🇪 德国 (Germany) 23 - xiaohe
-  server: 188.241.241.200
+  servername: uiuxtestsdcv-development-r6dg9.lucity.app
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/58b06206-cd53-23d6-279a-0f0dd259cb0a
+    headers:
+      Host: uiuxtestsdcv-development-r6dg9.lucity.app
+- name: 🇩🇪 德国 (Germany) 29 - xiaohe
+  server: de3.dedushka.top
   port: 443
   udp: true
   type: trojan
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de7.dedushka.top
+  sni: de3.dedushka.top
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -249,6 +307,12 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 21 - xiaohe
   - 🇩🇪 德国 (Germany) 22 - xiaohe
   - 🇩🇪 德国 (Germany) 23 - xiaohe
+  - 🇩🇪 德国 (Germany) 24 - xiaohe
+  - 🇩🇪 德国 (Germany) 25 - xiaohe
+  - 🇩🇪 德国 (Germany) 26 - xiaohe
+  - 🇩🇪 德国 (Germany) 27 - xiaohe
+  - 🇩🇪 德国 (Germany) 28 - xiaohe
+  - 🇩🇪 德国 (Germany) 29 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -277,5 +341,11 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 21 - xiaohe
   - 🇩🇪 德国 (Germany) 22 - xiaohe
   - 🇩🇪 德国 (Germany) 23 - xiaohe
+  - 🇩🇪 德国 (Germany) 24 - xiaohe
+  - 🇩🇪 德国 (Germany) 25 - xiaohe
+  - 🇩🇪 德国 (Germany) 26 - xiaohe
+  - 🇩🇪 德国 (Germany) 27 - xiaohe
+  - 🇩🇪 德国 (Germany) 28 - xiaohe
+  - 🇩🇪 德国 (Germany) 29 - xiaohe
 rules:
 - MATCH,PROXIES
