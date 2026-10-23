@@ -6,15 +6,24 @@
     {
       "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-      "server": "forwarded.frnhk.xyz",
-      "server_port": 46003,
-      "uuid": "6006c9a2-c0a2-4cda-80f2-405b0d790fc8",
-      "transport": {
-        "type": "ws",
-        "path": "/my1023",
-        "headers": {
-          "Host": "forwarded.frnhk.xyz"
+      "server": "111.90.143.184",
+      "server_port": 61111,
+      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jT5prLDhvJ86zZVz5pDX907oQbeZ0Hyb_VcDSiJxQQU",
+          "short_id": "1378f725da558887"
         }
+      },
+      "transport": {
+        "type": "grpc"
       }
     },
     {
