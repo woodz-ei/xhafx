@@ -4,23 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  server: 16.60.44.179
-  port: 22223
+- name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
+  server: promo.betust.net
+  port: 443
   udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  type: hysteria2
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
 rules:
 - MATCH,PROXIES
