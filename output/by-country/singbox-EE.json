@@ -4,24 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-      "server": "79.98.37.106",
+      "server": "141.0.187.15",
       "server_port": 443,
-      "uuid": "846cedee-2a52-0001-a0b9-11850ead6a8b",
-      "flow": "xtls-rprx-vision",
+      "password": "70043bfa-d6fb-4980-b27e-773e9e8b2004",
       "tls": {
         "enabled": true,
-        "server_name": "ee-central.v8x2b.lol",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw",
-          "short_id": ""
-        }
+        "server_name": "crt.onecloudstream.com",
+        "insecure": false
       }
     },
     {
