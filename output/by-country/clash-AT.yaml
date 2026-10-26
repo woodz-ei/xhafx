@@ -27,6 +27,21 @@ proxies:
     headers:
       Host: au5.pad-sservice.lat
 - name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  server: 152.53.1.40
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: au4.pad-sservice.lat
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /A14U
+    headers:
+      Host: au4.pad-service.com
+- name: 🇦🇹 奥地利 (Austria) 04 - xiaohe
   server: 62.83.41.69
   port: 8443
   udp: true
@@ -40,7 +55,22 @@ proxies:
     path: /AU6W
     headers:
       Host: au6.pad-sservice.lat
-- name: 🇦🇹 奥地利 (Austria) 04 - xiaohe
+- name: 🇦🇹 奥地利 (Austria) 05 - xiaohe
+  server: au7.pad-sservice.lat
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: au7.pad-sservice.lat
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /AU7W
+    headers:
+      Host: au7.pad-sservice.lat
+- name: 🇦🇹 奥地利 (Austria) 06 - xiaohe
   server: 89.58.20.210
   port: 8443
   udp: true
@@ -64,6 +94,8 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
   - 🇦🇹 奥地利 (Austria) 03 - xiaohe
   - 🇦🇹 奥地利 (Austria) 04 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 05 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,5 +105,7 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
   - 🇦🇹 奥地利 (Austria) 03 - xiaohe
   - 🇦🇹 奥地利 (Austria) 04 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 05 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 06 - xiaohe
 rules:
 - MATCH,PROXIES
