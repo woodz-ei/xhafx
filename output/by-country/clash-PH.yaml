@@ -13,7 +13,7 @@ proxies:
   tls: true
   servername: ph001.zestapp778.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
