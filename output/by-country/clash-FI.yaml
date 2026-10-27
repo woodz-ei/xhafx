@@ -13,7 +13,6 @@ proxies:
   tls: true
   servername: 45-149-147-213.sslip.io
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: kobedin-server1-vless
@@ -48,49 +47,24 @@ proxies:
   tls: true
   servername: hw3.divarkhaghazi.com.
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 8fc752g.fi3.h1clayd.click
-  port: 443
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   tls: true
   reality-opts:
-    public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18
-    short-id: 09d0a94a1c6fc9d5
-  servername: 8fc752g.fi3.h1clayd.click
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: f345a414c040
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 193.188.21.253
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: 196.196.204.180
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
-  tls: true
-  reality-opts:
-    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
-    short-id: 023a1e6ffc32be10
-  servername: 3f8efdt.fi1.h1clayd.click
-  client-fingerprint: edge
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,8 +75,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,7 +85,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 rules:
 - MATCH,PROXIES

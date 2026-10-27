@@ -23,18 +23,7 @@ proxies:
   sni: forshynewh.duckdns.org
   skip-cert-verify: false
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -44,17 +33,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 185.253.116.33
-  port: 14430
-  udp: true
-  type: vless
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 185.253.116.33
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,8 +41,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,7 +49,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
 rules:
 - MATCH,PROXIES
