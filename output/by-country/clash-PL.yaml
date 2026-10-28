@@ -5,50 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 191.217.251.225
-  port: 4443
-  udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: nl1.obxodvpn.us
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 168.222.43.53
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: site.teslamotor.site
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 155.117.5.208
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  server: 2.26.6.1
+  port: 2087
+  udp: true
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: poland-new-new.failspace.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland-new-new.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 77.232.135.141
-  port: 8445
-  udp: true
-  type: vless
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-  tls: true
-  servername: ru1.radiolumens.uk
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: beru-pl
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   server: 54.37.131.126
   port: 80
   udp: true
@@ -61,16 +39,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  server: 2.26.6.1
-  port: 2087
-  udp: true
-  type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  tls: true
-  servername: 2.26.6.1
-  skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,9 +48,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
-  - 🇵🇱 波兰 (Poland) 05 - xiaohe
-  - 🇵🇱 波兰 (Poland) 06 - xiaohe
-  - 🇵🇱 波兰 (Poland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,8 +57,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
-  - 🇵🇱 波兰 (Poland) 05 - xiaohe
-  - 🇵🇱 波兰 (Poland) 06 - xiaohe
-  - 🇵🇱 波兰 (Poland) 07 - xiaohe
 rules:
 - MATCH,PROXIES
