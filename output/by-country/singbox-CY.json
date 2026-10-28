@@ -4,25 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-      "server": "171.22.119.74",
-      "server_port": 8446,
-      "password": "Pass-Client-1",
-      "tls": {
-        "enabled": true,
-        "server_name": "171.22.119.74",
-        "insecure": true
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-video-call"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe",
-      "server": "hydra.yokkastars.com",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
+      "server": "5.253.28.240",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
       "tls": {
@@ -30,7 +14,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -48,16 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
