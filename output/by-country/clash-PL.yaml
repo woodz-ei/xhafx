@@ -5,46 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 168.222.43.53
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 155.117.5.208
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 78.17.128.153
-  port: 35076
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 168.222.43.53
+  port: 2052
   udp: true
-  type: hysteria2
-  password: b4c8ee9caa74b7ba0a61
-  sni: scrap.halyvanedorogo.ru
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 92.118.150.146
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  server: 70.34.252.255
   port: 443
   udp: true
   type: trojan
-  password: Trojan@82164024
-  sni: pl.tronsg.com
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 77.232.135.141
-  port: 8445
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 2.26.6.1
+  port: 2087
   udp: true
   type: vless
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   tls: true
-  servername: ru1.radiolumens.uk
+  servername: 2.26.6.1
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: beru-pl
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: pol.rvpn.app
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 8z2OB_gvFvpKgjFi8s9Cvw
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   server: 54.37.131.126
   port: 80
