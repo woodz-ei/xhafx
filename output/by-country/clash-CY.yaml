@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
-  server: 171.22.119.74
-  port: 8446
-  udp: true
-  type: trojan
-  password: Pass-Client-1
-  sni: 171.22.119.74
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-video-call
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   server: 5.253.30.99
   port: 40443
   udp: true
@@ -26,6 +15,19 @@ proxies:
   reality-opts:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  server: dorado.yokkastars.com
+  port: 40443
+  udp: true
+  type: vless
+  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
   servername: deepl.com
   client-fingerprint: chrome
 proxy-groups:

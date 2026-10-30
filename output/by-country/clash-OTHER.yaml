@@ -5,21 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.50.177
-  port: 2083
+  server: 104.16.111.102
+  port: 443
   udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: or3.sfacg.uk
+  servername: jp3.yohototo.top
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /or3
+    path: /tyxyws
     headers:
-      Host: or3.sfacg.uk
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select

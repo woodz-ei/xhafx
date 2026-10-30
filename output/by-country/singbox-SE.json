@@ -24,7 +24,7 @@
       "tls": {
         "enabled": true,
         "server_name": "diffoscope.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -42,13 +42,35 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+      "server": "31.172.65.4",
+      "server_port": 8443,
+      "uuid": "9c6e83fc-b755-4ad4-9b0a-14b610153d8f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wRvUAKwcHc4pBNVouIcVjQkVD9aCRR-AmtcFyBV36lU",
+          "short_id": "0e7741edc378622f"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 03 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 04 - xiaohe"
       ]
     },
     {
@@ -57,7 +79,8 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 03 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,22 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.50.177",
-      "server_port": 2083,
-      "uuid": "ac251237-576f-40c8-a543-554960c958b1",
-      "security": "auto",
+      "server": "104.16.111.102",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "or3.sfacg.uk",
-        "insecure": false
+        "server_name": "jp3.yohototo.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/or3",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "or3.sfacg.uk"
+          "Host": "jp3.yohototo.top"
         }
       }
     },

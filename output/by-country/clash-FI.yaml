@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: cd0.bmi.ir.kolman.com.de
   port: 80
   udp: true
@@ -13,8 +24,8 @@ proxies:
   alterId: 0
   cipher: auto
   network: httpupgrade
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 65.109.210.221
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: hw3.divarkhaghazi.com
   port: 465
   udp: true
   type: vless
@@ -22,13 +33,12 @@ proxies:
   tls: true
   servername: hw3.divarkhaghazi.com.
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 65.109.211.81
   port: 465
   udp: true
@@ -43,6 +53,21 @@ proxies:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: 77.42.12.225
+  port: 443
+  udp: true
+  type: vless
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  tls: true
+  reality-opts:
+    public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18
+    short-id: 09d0a94a1c6fc9d5
+  servername: 8fc752g.fi3.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: f345a414c040
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +76,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +86,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
