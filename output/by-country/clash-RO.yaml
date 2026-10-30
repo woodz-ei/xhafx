@@ -11,6 +11,16 @@ proxies:
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
+  server: 162.249.125.133
+  port: 443
+  udp: true
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   server: 46.28.67.55
   port: 443
   udp: true
@@ -23,16 +33,6 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  server: 162.249.125.133
-  port: 443
-  udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
 proxy-groups:
 - name: PROXIES
   type: select
