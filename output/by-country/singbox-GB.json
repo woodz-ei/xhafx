@@ -35,71 +35,16 @@
       "password": "AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa"
     },
     {
-      "type": "trojan",
-      "tag": "🇬🇧 英国 (United Kingdom) 05 - xiaohe",
-      "server": "en001.zestapp778.com",
-      "server_port": 29813,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "en001.zestapp778.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 06 - xiaohe",
-      "server": "51.89.194.151",
-      "server_port": 2053,
-      "uuid": "8e790f25-1d71-4601-9fb0-d503931dcfca",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0",
-          "short_id": "d051f678212f9d54"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇬🇧 英国 (United Kingdom) 07 - xiaohe",
-      "server": "57.129.132.223",
-      "server_port": 80,
-      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "google.com"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 08 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 05 - xiaohe",
       "server": "146.70.61.37",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 09 - xiaohe",
-      "server": "98.98.207.163",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 10 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 06 - xiaohe",
       "server": "138.124.125.193",
       "server_port": 10444,
       "uuid": "e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4",
@@ -119,16 +64,28 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 11 - xiaohe",
-      "server": "98.98.142.161",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 07 - xiaohe",
+      "server": "51.89.194.151",
+      "server_port": 2053,
+      "uuid": "8e790f25-1d71-4601-9fb0-d503931dcfca",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0",
+          "short_id": "d051f678212f9d54"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 12 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 08 - xiaohe",
       "server": "191.44.108.31",
       "server_port": 443,
       "uuid": "558b26f6-061b-4079-9b84-ca13b3e90ae3",
@@ -138,7 +95,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -148,8 +105,24 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 09 - xiaohe",
+      "server": "98.98.207.163",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 10 - xiaohe",
+      "server": "98.98.142.161",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 13 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 11 - xiaohe",
       "server": "46.250.250.149",
       "server_port": 2053,
       "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
@@ -158,7 +131,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -168,12 +141,16 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 14 - xiaohe",
-      "server": "94.156.250.148",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
+      "type": "trojan",
+      "tag": "🇬🇧 英国 (United Kingdom) 12 - xiaohe",
+      "server": "en001.zestapp778.com",
+      "server_port": 29813,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "en001.zestapp778.com",
+        "insecure": false
+      }
     },
     {
       "type": "selector",
@@ -191,9 +168,7 @@
         "🇬🇧 英国 (United Kingdom) 09 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 10 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 11 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 12 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 13 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 14 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 12 - xiaohe"
       ]
     },
     {
@@ -211,9 +186,7 @@
         "🇬🇧 英国 (United Kingdom) 09 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 10 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 11 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 12 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 13 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 14 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 12 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-      "server": "13.143.239.127",
+      "type": "shadowsocks",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
+      "server": "45.207.207.25",
       "server_port": 443,
-      "password": "2a0fc918-9c61-451b-a9ad-e8f796e70f52",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl1.obxodvpn.us",
-        "insecure": true
-      }
+      "method": "aes-256-gcm",
+      "password": "gj1+XKulKV0nmw6IThckOkkJh5DSM7+C"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
