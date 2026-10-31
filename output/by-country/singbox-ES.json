@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-      "server": "66.163.118.244",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.discovergreatjobsandadvanceyourcareer.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
       "server": "156.252.229.30",
       "server_port": 8443,
       "uuid": "3e21e3d3-6d26-4155-b851-764dd8e8c6b5",
@@ -37,7 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -56,13 +44,38 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaohe",
+      "server": "66.163.118.244",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
+      "server": "66.163.118.62",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇪🇸 西班牙 (Spain) 01 - xiaohe",
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 03 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 03 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 04 - xiaohe"
       ]
     },
     {
@@ -71,7 +84,8 @@
       "outbounds": [
         "🇪🇸 西班牙 (Spain) 01 - xiaohe",
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 03 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 03 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

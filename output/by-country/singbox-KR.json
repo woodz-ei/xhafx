@@ -12,15 +12,28 @@
       "security": "auto"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
-      "server": "112.169.175.199",
-      "server_port": 31157,
-      "uuid": "bd2fb303-b4c7-49af-a8e3-5c6f11b005dd"
+      "server": "211.178.105.134",
+      "server_port": 6123,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
+      "server": "132.226.226.189",
+      "server_port": 50160,
+      "password": "1671a252e2a97dc2bda4e515475931da",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaohe",
       "server": "152.70.237.123",
       "server_port": 2053,
       "password": "maintell",
@@ -31,23 +44,15 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaohe",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 05 - xiaohe",
-      "server": "kr002.zestapp778.com",
+      "server": "158.247.255.150",
       "server_port": 48851,
       "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
         "server_name": "kr002.zestapp778.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -61,15 +66,24 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 07 - xiaohe",
-      "server": "132.226.226.189",
-      "server_port": 50160,
-      "password": "1671a252e2a97dc2bda4e515475931da",
+      "server": "3.39.4.109",
+      "server_port": 18967,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
       }
     },
     {
@@ -87,21 +101,20 @@
     {
       "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 09 - xiaohe",
-      "server": "3.39.4.109",
-      "server_port": 18967,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
+      "server": "151.245.106.49",
+      "server_port": 2053,
+      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
+          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
+          "short_id": "429499c03d4cc8a0"
         }
       }
     },
@@ -127,31 +140,15 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 11 - xiaohe",
-      "server": "141.164.45.187",
-      "server_port": 5498,
-      "method": "aes-256-gcm",
-      "password": "lGqs95QkFHo2NV"
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 12 - xiaohe",
-      "server": "151.245.106.49",
-      "server_port": 2053,
-      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
+      "server": "152.67.200.82",
+      "server_port": 50160,
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
-          "short_id": "429499c03d4cc8a0"
-        }
+        "server_name": "google.com",
+        "insecure": true
       }
     },
     {
@@ -169,8 +166,7 @@
         "🇰🇷 韩国 (South Korea) 08 - xiaohe",
         "🇰🇷 韩国 (South Korea) 09 - xiaohe",
         "🇰🇷 韩国 (South Korea) 10 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 11 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 12 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 11 - xiaohe"
       ]
     },
     {
@@ -187,8 +183,7 @@
         "🇰🇷 韩国 (South Korea) 08 - xiaohe",
         "🇰🇷 韩国 (South Korea) 09 - xiaohe",
         "🇰🇷 韩国 (South Korea) 10 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 11 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 12 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 11 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
