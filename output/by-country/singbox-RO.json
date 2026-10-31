@@ -11,18 +11,41 @@
       "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
     },
     {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
+      "server": "2.26.89.192",
+      "server_port": 443,
+      "uuid": "07680ffb-0666-4836-b6ad-ec0de62bc38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-ms-90.next-gen-shopping.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HA8RX24k72lyACy0T1mCDeYcUQh22XRlT4wuhj3Onl4",
+          "short_id": "36b707a341db758d"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
