@@ -30,6 +30,14 @@ proxies:
   servername: upnl.giftsbattle.vip
   client-fingerprint: ''
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 70.34.252.255
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: 177.1.192.67
   port: 443
   udp: true
@@ -42,15 +50,20 @@ proxies:
     short-id: 830e615a39f4c811
   servername: up4.uni-plan.com
   client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 70.34.252.255
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  server: 31.59.143.147
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  type: vless
+  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Liu35gmIQJtbul5AeCrceJTjsmln4RaqxX6joKlaBjk
+    short-id: ae97223a8f799889
+  servername: pl2.waspnest.space
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   server: 177.1.192.117
   port: 443
   udp: true
@@ -63,15 +76,6 @@ proxies:
     short-id: 3952a220c86628a8
   servername: up7.uni-plan.com
   client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  server: 2.26.6.1
-  port: 2087
-  udp: true
-  type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  tls: true
-  servername: 2.26.6.1
-  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 08 - xiaohe
   server: 54.37.131.126
   port: 80
@@ -85,6 +89,15 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
+  server: 2.26.6.1
+  port: 2087
+  udp: true
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -98,6 +111,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
+  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -111,5 +125,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
+  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 rules:
 - MATCH,PROXIES
