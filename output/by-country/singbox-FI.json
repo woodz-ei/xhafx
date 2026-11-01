@@ -42,23 +42,26 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "65.109.211.81",
+      "server": "hw5.roghanmo.com",
       "server_port": 465,
-      "uuid": "09f30c46-3964-41ce-882a-72aee83ddd42",
+      "uuid": "a356fa77-7199-417a-80dd-0c0925789161",
       "tls": {
         "enabled": true,
-        "server_name": "hw6.divarkhaghazi.com",
+        "server_name": "hw5.roghanmo.com.",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "hw6.divarkhaghazi.com."
+          "Host": "hw5.roghanmo.com"
         }
       }
     },

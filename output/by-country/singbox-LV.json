@@ -6,21 +6,21 @@
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-      "server": "45.43.79.92",
+      "server": "31.58.171.53",
       "server_port": 443,
-      "uuid": "042b12d8-bac4-4b3a-b661-79e333f08e4e",
+      "uuid": "4d259556-57f7-4e5a-9a4a-48868787fb38",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vikt659.isgood.host",
+        "server_name": "dl.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "M4Y9h339sntl5wEpiCa7f4IKhJ_8JLzPnAz2IzKlngM",
-          "short_id": "af4ca5d16438c938"
+          "public_key": "iCy_Y2B58KB39rw94EycaBO-aldt2PaMmWz62arreSo",
+          "short_id": "f77f3068"
         }
       }
     },
@@ -46,34 +46,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
-      "server": "31.58.171.53",
-      "server_port": 443,
-      "uuid": "4d259556-57f7-4e5a-9a4a-48868787fb38",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "iCy_Y2B58KB39rw94EycaBO-aldt2PaMmWz62arreSo",
-          "short_id": "f77f3068"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe"
       ]
     },
     {
@@ -81,8 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -30,20 +30,20 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 65.109.211.81
+  server: hw5.roghanmo.com
   port: 465
   udp: true
   type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
   tls: true
-  servername: hw6.divarkhaghazi.com
+  servername: hw5.roghanmo.com.
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: hw6.divarkhaghazi.com.
+      Host: hw5.roghanmo.com
 proxy-groups:
 - name: PROXIES
   type: select

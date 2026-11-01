@@ -18,13 +18,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  server: 38.60.200.237
+  server: th001.zestapp778.com
   port: 33079
   udp: true
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: th001.zestapp778.com
-  skip-cert-verify: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,11 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
-  server: 5.253.28.224
+  server: 5.253.42.164
   port: 40443
   udp: true
   type: vless
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -18,6 +18,19 @@ proxies:
   servername: deepl.com
   client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  server: 5.253.28.240
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: random
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   server: 5.253.28.240
   port: 2443
   udp: true
@@ -32,19 +45,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
-  server: hydra.yokkastars.com
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select

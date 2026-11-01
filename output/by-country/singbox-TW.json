@@ -11,7 +11,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "off",
+        "server_name": "127.0.0.1",
         "insecure": true
       }
     },
@@ -23,29 +23,13 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "server_name": "https://t.me/oneclickvpnkeys",
         "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
-      "server": "n04.jinggai.online",
-      "server_port": 8443,
-      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
-      "tls": {
-        "enabled": true,
-        "server_name": "n04.jinggai.online",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/nvl-n04-ws/e0577fe8fd7c8823"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -60,6 +44,22 @@
         "headers": {
           "Host": "ty986gfazs.cainiaohub.xyz"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
+      "server": "n04.jinggai.online",
+      "server_port": 8443,
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "tls": {
+        "enabled": true,
+        "server_name": "n04.jinggai.online",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/nvl-n04-ws/e0577fe8fd7c8823"
       }
     },
     {
