@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "connectwithtopemployersandfindidealjobs.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -39,19 +39,23 @@
     {
       "type": "trojan",
       "tag": "🇲🇽 墨西哥 (Mexico) 03 - xiaohe",
-      "server": "mx001.zestapp778.com",
+      "server": "149.104.87.33",
       "server_port": 15083,
       "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
         "server_name": "mx001.zestapp778.com",
-        "insecure": true
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
       "type": "trojan",
       "tag": "🇲🇽 墨西哥 (Mexico) 04 - xiaohe",
-      "server": "149.104.87.33",
+      "server": "38.60.224.241",
       "server_port": 15083,
       "password": "5t6i121em5lkmsmk",
       "tls": {
