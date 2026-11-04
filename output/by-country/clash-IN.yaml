@@ -5,14 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: in002.zestapp778.com
+  server: 144.24.109.215
+  port: 51000
+  udp: true
+  type: hysteria2
+  password: d105c6ae-621b-47c1-b85b-075fd6a39aca
+  sni: cn.cremedelamer.com
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 02 - xiaohe
+  server: 139.84.210.39
   port: 42733
   udp: true
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: in002.zestapp778.com
-  skip-cert-verify: false
-- name: 🇮🇳 印度 (India) 02 - xiaohe
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 03 - xiaohe
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -21,8 +29,10 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: in.smrtai.top
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 04 - xiaohe
+  server: 178.212.35.198
   port: 443
   udp: true
   type: vless
@@ -32,15 +42,7 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 144.24.109.215
-  port: 51000
-  udp: true
-  type: hysteria2
-  password: d105c6ae-621b-47c1-b85b-075fd6a39aca
-  sni: cn.cremedelamer.com
-  skip-cert-verify: true
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
