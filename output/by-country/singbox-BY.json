@@ -25,12 +25,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 03 - xiaohe",
+      "server": "178.172.227.228",
+      "server_port": 14430,
+      "uuid": "b6e5dc56-836f-48c1-9163-b0b0b43b647d",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "178.172.227.228"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
-        "🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe",
+        "🇧🇾 白俄罗斯 (Belarus) 03 - xiaohe"
       ]
     },
     {
@@ -38,7 +53,8 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
-        "🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe",
+        "🇧🇾 白俄罗斯 (Belarus) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

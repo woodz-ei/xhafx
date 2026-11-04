@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇷 IR 01 - xiaohe",
-      "server": "198.16.113.221",
-      "server_port": 8443,
-      "uuid": "98a24806-141a-43d3-b094-bd66c4eb93b8",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
+      "server": "104.253.216.227",
+      "server_port": 443,
+      "uuid": "106d20f6-d70a-40e2-b69b-8e82baf8d117",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.microsoft.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE",
-          "short_id": "69984b9e02545831"
+          "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
+          "short_id": "60500a63ad12"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

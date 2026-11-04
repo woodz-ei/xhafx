@@ -5,13 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 70.34.207.14
+  server: se3.shtil.io
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  type: vless
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  tls: true
+  servername: se3.shtil.io
   skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
