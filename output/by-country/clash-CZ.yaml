@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  server: 45.154.26.63
+- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: ff85e702-b605-4109-884d-2c1f065d0954
+  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
-    short-id: 3c032a7e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: ee1716767f9b
+  servername: www.tradingview.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 rules:
 - MATCH,PROXIES
