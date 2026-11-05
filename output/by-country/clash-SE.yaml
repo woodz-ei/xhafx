@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: se3.shtil.io
+  server: 194.104.94.141
   port: 443
   udp: true
   type: vless
