@@ -12,17 +12,61 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 129.101.100.126
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+  tls: true
+  servername: lte-v2-ws.gacvpn.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /static/js/runtime.9d03c7.js
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  server: 2.26.6.1
+  port: 2087
+  udp: true
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 145.63.143.205
+  port: 8444
+  udp: true
+  type: vless
+  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
+  tls: true
+  servername: pl1.meshbeat.online
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/v1/devices/10be32b380/telemetry
+    headers:
+      Host: pl1.meshbeat.online
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+  - 🇵🇱 波兰 (Poland) 03 - xiaohe
+  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+  - 🇵🇱 波兰 (Poland) 03 - xiaohe
+  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 rules:
 - MATCH,PROXIES
