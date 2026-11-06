@@ -20,7 +20,7 @@
     {
       "type": "trojan",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "172.66.0.1",
+      "server": "104.18.0.1",
       "server_port": 2053,
       "password": "gHQP0D7D15",
       "tls": {
