@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "179.253.82.47",
-      "server_port": 4444,
-      "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
-      "tls": {
-        "enabled": true,
-        "server_name": "fl3.nexfile.net",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -30,48 +18,18 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "104.18.0.1",
-      "server_port": 2053,
-      "password": "gHQP0D7D15",
-      "tls": {
-        "enabled": true,
-        "server_name": "marvdasht.phonecomparisonblog.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "marvdasht.phonecomparisonblog.org"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
