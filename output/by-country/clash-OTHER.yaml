@@ -1,0 +1,51 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: fast.145779.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
+  tls: true
+  servername: fast.145779.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws-tesla
+    headers:
+      Host: fast.145779.xyz
+- name: 🌐 其他地区 (Other) 02 - xiaohe
+  server: fast.145779.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: e3149c82-00f6-4227-b2c0-b78f1dd81279
+  tls: true
+  servername: fast.145779.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-tesla
+    headers:
+      Host: fast.145779.xyz
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🌐 其他地区 (Other) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🌐 其他地区 (Other) 02 - xiaohe
+rules:
+- MATCH,PROXIES

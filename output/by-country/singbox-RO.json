@@ -56,25 +56,12 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe",
-      "server": "cdn-rum-keno-prsv.keno.su",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
       "server_port": 443,
-      "uuid": "dc95c1dd-2cd3-414c-8cf1-71ae86dad666",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn-rum-keno-prsv.keno.su",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Cw04nkURk7InPCPZl-0PovP44rh5o74dMHBUFOsjFig",
-          "short_id": "a1b2c3d4e5f60718"
-        }
-      }
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
       "type": "selector",
