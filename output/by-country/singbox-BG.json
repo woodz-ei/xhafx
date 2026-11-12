@@ -4,22 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-      "server": "191.44.112.170.sslip.io",
+      "server": "88.80.150.15",
       "server_port": 443,
-      "password": "46d221fa-e9b4-748c-4eae-019a88e42991",
+      "uuid": "1d46250c-f015-439d-a7fd-c4d9e2a4c63d",
       "tls": {
         "enabled": true,
-        "server_name": "orbylume.my.to",
-        "insecure": false
+        "server_name": "bg2.oncloudvpn.com",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
       },
       "transport": {
-        "type": "ws",
-        "path": "/tvpn-trojan/bg",
-        "headers": {
-          "Host": "orbylume.my.to"
-        }
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
