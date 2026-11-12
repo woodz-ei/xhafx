@@ -5,29 +5,56 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 2.26.224.174
+  server: 138.124.242.46
   port: 8443
   udp: true
   type: vless
-  uuid: a4e5f910-23f4-470f-82a7-ed9d7be71dec
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  tls: true
+  servername: pl2-edge.gacvpn.site
+  skip-cert-verify: false
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: connect-pl
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 85.119.147.10
+  port: 2443
+  udp: true
+  type: vless
+  uuid: a60777ef-1a2e-429b-a45e-97c81492b4d8
   flow: xtls-rprx-vision
   tls: true
+  servername: next-ru9s.earthlink.work
+  skip-cert-verify: false
+  client-fingerprint: qq
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  server: 201.58.139.66
+  port: 443
+  udp: true
+  type: vless
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  tls: true
   reality-opts:
-    public-key: d6qmF8ibk_PxtDJPzSa7LKw9VUI_mZ59DrTvmW3RaFc
-    short-id: 10983e6c816181c2
-  servername: teamdocs.su
-  client-fingerprint: firefox
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+    short-id: 6c5c7900406a1ae7
+  servername: 57aac2t.pl7.h1clayd.click
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
