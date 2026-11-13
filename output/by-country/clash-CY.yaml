@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  server: 91.92.137.165
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1d46250c-f015-439d-a7fd-c4d9e2a4c63d
+  tls: true
+  servername: bg.oncloudvpn.com
+  skip-cert-verify: false
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   server: 45.86.60.174
   port: 16443
   udp: true
@@ -16,11 +29,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
 rules:
 - MATCH,PROXIES

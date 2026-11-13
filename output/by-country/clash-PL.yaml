@@ -33,19 +33,6 @@ proxies:
   servername: blog.ncknms.com
   client-fingerprint: edge
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 20.215.66.17
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  servername: www.apple.com
-  client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 150.251.113.34
   port: 443
   udp: true
@@ -58,6 +45,34 @@ proxies:
     short-id: 150a627d15154cf2
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 20.215.66.17
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  servername: www.apple.com
+  client-fingerprint: ''
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 185.86.147.175
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+  tls: true
+  servername: bhjolq0d0l.flowersgood.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /service/telemetry/045d381f1166/
+    headers:
+      Host: bhjolq0d0l.flowersgood.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +82,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
+  - 🇵🇱 波兰 (Poland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,5 +92,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
+  - 🇵🇱 波兰 (Poland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
