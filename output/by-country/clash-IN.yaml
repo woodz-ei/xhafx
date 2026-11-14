@@ -37,20 +37,9 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
     headers:
-      Host: in-152.67.8.205-0202
-- name: 🇮🇳 印度 (India) 05 - xiaohe
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 04 - xiaohe
   server: 13.140.253.35
   port: 443
   udp: true
@@ -59,26 +48,12 @@ proxies:
   tls: true
   servername: xray-bprkdwje-clever-comet-4.cloady.io
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /27dbf143acdd7bca
     headers:
       Host: xray-bprkdwje-clever-comet-4.cloady.io
-- name: 🇮🇳 印度 (India) 06 - xiaohe
-  server: 13.140.253.35
-  port: 443
-  udp: true
-  type: vless
-  uuid: f1d3c8af71c4ef75625fcf446aa2c15b
-  tls: true
-  servername: xray-h0urp9tx-rapid-summit-2.cloady.io
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /050334203cc522a3
-    headers:
-      Host: xray-h0urp9tx-rapid-summit-2.cloady.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,8 +63,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
-  - 🇮🇳 印度 (India) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,7 +72,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
-  - 🇮🇳 印度 (India) 06 - xiaohe
 rules:
 - MATCH,PROXIES
