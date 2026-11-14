@@ -19,12 +19,13 @@ proxies:
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 03 - xiaohe
-  server: 84.247.155.196
-  port: 80
+  server: 8.211.175.236
+  port: 8443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 04 - xiaohe
   server: 138.3.208.26
   port: 50160
@@ -34,6 +35,19 @@ proxies:
   sni: '1'
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 05 - xiaohe
+  server: zfapi.zalolink.com
+  port: 43149
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+    short-id: 15aa0ad4
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 06 - xiaohe
   server: 13.140.248.125
   port: 443
   udp: true
@@ -48,8 +62,8 @@ proxies:
     path: /e3e2aa65089989f0
     headers:
       Host: xray-p1vi234h-lunar-forest-6.cloady.io
-- name: 🇯🇵 日本 (Japan) 06 - xiaohe
-  server: 104.16.10.135
+- name: 🇯🇵 日本 (Japan) 07 - xiaohe
+  server: 104.24.31.89
   port: 443
   udp: true
   type: vless
@@ -73,6 +87,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 04 - xiaohe
   - 🇯🇵 日本 (Japan) 05 - xiaohe
   - 🇯🇵 日本 (Japan) 06 - xiaohe
+  - 🇯🇵 日本 (Japan) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,5 +99,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 04 - xiaohe
   - 🇯🇵 日本 (Japan) 05 - xiaohe
   - 🇯🇵 日本 (Japan) 06 - xiaohe
+  - 🇯🇵 日本 (Japan) 07 - xiaohe
 rules:
 - MATCH,PROXIES
