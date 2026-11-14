@@ -41,8 +41,8 @@
       "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
       "tls": {
         "enabled": true,
-        "server_name": "lakes.blog-forme.ru",
-        "insecure": false
+        "server_name": "94.183.164.119",
+        "insecure": true
       }
     },
     {

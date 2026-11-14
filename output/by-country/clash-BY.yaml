@@ -30,6 +30,12 @@ proxies:
   client-fingerprint: safari
 - name: 🇧🇾 白俄罗斯 (Belarus) 03 - xiaohe
   server: 178.172.227.124
+  port: 10443
+  udp: true
+  type: vless
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+- name: 🇧🇾 白俄罗斯 (Belarus) 04 - xiaohe
+  server: 178.172.227.124
   port: 14430
   udp: true
   type: vless
@@ -39,12 +45,6 @@ proxies:
     path: /vless
     headers:
       Host: 178.172.227.124
-- name: 🇧🇾 白俄罗斯 (Belarus) 04 - xiaohe
-  server: 178.172.227.124
-  port: 10443
-  udp: true
-  type: vless
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
 proxy-groups:
 - name: PROXIES
   type: select

@@ -31,8 +31,8 @@ proxies:
   udp: true
   type: hysteria2
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: lakes.blog-forme.ru
-  skip-cert-verify: false
+  sni: 94.183.164.119
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
