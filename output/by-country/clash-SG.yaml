@@ -12,35 +12,33 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  server: 149.88.23.202
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  server: 149.88.107.74
+  server: 15.235.164.133
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
   server: 149.88.106.74
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
-  server: 149.88.23.207
-  port: 18000
+- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
+  server: 51.79.228.131
+  port: 19999
   udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
+  server: 68.183.227.236
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   server: 15.235.182.183
   port: 19999
@@ -56,20 +54,66 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 08 - xiaohe
-  server: 15.235.164.133
-  port: 19999
+  server: 68.183.235.122
+  port: 8080
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 09 - xiaohe
-  server: 51.79.228.131
+  server: 149.88.107.74
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 10 - xiaohe
+  server: 68.183.235.240
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 11 - xiaohe
+  server: 149.88.23.207
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 12 - xiaohe
+  server: 149.88.23.202
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 13 - xiaohe
+  server: 149.28.130.108
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: searchcreativejobsandshowcaseyourartistictalents.com
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 14 - xiaohe
+  server: 138.2.73.238
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: 138.2.73.238
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 15 - xiaohe
+  server: 128.1.186.73
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 16 - xiaohe
   server: 140.245.62.225
   port: 36442
   udp: true
@@ -80,29 +124,35 @@ proxies:
   servername: xjpp.zjlo.top
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 11 - xiaohe
-  server: 128.1.186.73
-  port: 8080
+- name: 🇸🇬 新加坡 (Singapore) 17 - xiaohe
+  server: 5.34.177.164
+  port: 443
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 12 - xiaohe
-  server: 68.183.235.122
-  port: 8080
+  type: vless
+  uuid: ca678d26-5435-4d13-b378-06c4c3b070ff
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cwWhNuekusD1iPZZ--7G891dU9PCacxyCYwsZxOApHA
+    short-id: b2efed6d157e7bb0
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 18 - xiaohe
+  server: 139.162.27.96
+  port: 2096
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 13 - xiaohe
-  server: 138.2.73.238
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 14 - xiaohe
+  type: vless
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 19 - xiaohe
   server: 138.2.89.249
   port: 443
   udp: true
@@ -112,7 +162,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 309502c4a8df10b46fb976d4a8c43f42
-- name: 🇸🇬 新加坡 (Singapore) 15 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 20 - xiaohe
   server: 15.235.184.127
   port: 443
   udp: true
@@ -120,17 +170,19 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: exploredigitaljobplatformandfindonlinework.com
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 16 - xiaohe
-  server: 104.18.20.212
-  port: 8080
+- name: 🇸🇬 新加坡 (Singapore) 21 - xiaohe
+  server: zfapi.zalolink.com
+  port: 30322
   udp: true
   type: vless
-  uuid: ab5a19cf-cadc-4648-a5e9-b510aca8f732
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: akanode.madvpn.us.kg
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
+    short-id: 6a60e7e382d6
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -152,6 +204,11 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 14 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 15 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 16 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 17 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 18 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 19 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 20 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 21 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -173,5 +230,10 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 14 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 15 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 16 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 17 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 18 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 19 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 20 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 21 - xiaohe
 rules:
 - MATCH,PROXIES
