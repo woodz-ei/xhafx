@@ -11,10 +11,7 @@
       "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
+        "path": "/vless"
       }
     },
     {
@@ -48,7 +45,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -60,12 +57,12 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 04 - xiaohe",
-      "server": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+      "server": "small-forest-d3e9.sarahds.workers.dev",
       "server_port": 443,
       "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
       "tls": {
         "enabled": true,
-        "server_name": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+        "server_name": "small-forest-d3e9.sarahds.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -76,7 +73,7 @@
         "type": "ws",
         "path": "/0175469f14317d82",
         "headers": {
-          "Host": "xray-dmr3b3hy-calm-maple-7.cloady.io"
+          "Host": "small-forest-d3e9.sarahds.workers.dev"
         }
       }
     },

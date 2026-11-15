@@ -13,8 +13,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 178.212.35.198
   port: 443
@@ -38,22 +36,22 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: xray-dmr3b3hy-calm-maple-7.cloady.io
+  server: small-forest-d3e9.sarahds.workers.dev
   port: 443
   udp: true
   type: vless
   uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
   tls: true
-  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
+  servername: small-forest-d3e9.sarahds.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /0175469f14317d82
     headers:
-      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
+      Host: small-forest-d3e9.sarahds.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
