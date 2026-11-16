@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  server: 188.225.24.192
+  port: 443
+  udp: true
+  type: vless
+  uuid: c0c949fc-2ed6-4597-b680-a1a3276ebf87
+  flow: xtls-rprx-vision
+  tls: true
+  servername: portal.bokovskay.app
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   server: 46.29.255.123
   port: 59539
   udp: true
@@ -15,17 +26,6 @@ proxies:
   reality-opts:
     public-key: R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ
   servername: cloudflare-dns.com
-  client-fingerprint: firefox
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: 188.225.24.62
-  port: 443
-  udp: true
-  type: vless
-  uuid: c0c949fc-2ed6-4597-b680-a1a3276ebf87
-  flow: xtls-rprx-vision
-  tls: true
-  servername: img.bokovskay.app
-  skip-cert-verify: false
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
