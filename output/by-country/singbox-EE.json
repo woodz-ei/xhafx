@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
-      "server": "84.32.83.197",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
+      "server": "5.129.202.80",
       "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
+      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "api-dns-gw.galioncc.com",
+        "server_name": "mirror-50.topp-con.xyz",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "a7d309e4c16b825f"
+          "public_key": "NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8",
+          "short_id": "2ef2b10d5143d798"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

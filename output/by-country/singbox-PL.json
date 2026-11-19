@@ -6,14 +6,22 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "179.253.101.162",
+      "server": "144.31.0.101",
       "server_port": 443,
-      "uuid": "fd90e601-a56c-42b8-aab7-aa02d26fcb04",
+      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "app.streamru17.net",
-        "insecure": false
+        "server_name": "gmtrtb.wey-land.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1eEtiZY5qDDosntp-9_xFnOIvOBzHy4d3-eA7v11qx0",
+          "short_id": ""
+        }
       }
     },
     {
@@ -37,28 +45,12 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "1e55beca-3c69-4fa7-fb1f-15c1b767435f",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 02 - xiaohe"
       ]
     },
     {
@@ -66,8 +58,7 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
