@@ -24,7 +24,7 @@
       "tls": {
         "enabled": true,
         "server_name": "connectwithemployerstohireyouridealteam.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {

@@ -4,15 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "82.40.63.138",
-      "server_port": 443,
-      "password": "ca60984f-b1f0-4073-bd33-4c75168f749a",
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
+      "server": "38.107.234.57",
+      "server_port": 8443,
+      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
       "tls": {
         "enabled": true,
-        "server_name": "kraw-pl-4.fantoff.online",
+        "server_name": "3h-kazakhstan1.09vpn.com",
         "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
       }
     },
     {
@@ -20,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
