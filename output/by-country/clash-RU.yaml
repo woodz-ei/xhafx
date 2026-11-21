@@ -18,6 +18,19 @@ proxies:
   servername: apple.com
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 37.235.247.81
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2ae0670d-0bdf-409e-9a55-4e970252d378
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  servername: apple.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 48.103.133.47
   port: 8443
   udp: true
@@ -30,8 +43,16 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: apple.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 200.169.179.233
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 103.88.243.142
+  port: 11592
+  udp: true
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  server: 201.51.12.98
   port: 443
   udp: true
   type: vless
@@ -43,40 +64,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 103.88.243.142
-  port: 11592
-  udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 122.8.93.4
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 4fabeed0-790e-9724-8f12-138ed31ac60e
-  tls: true
-  reality-opts:
-    public-key: -GbQJg3bnEGEVFjVaRRu01cgF1f0K_maI4d5MWtMb28
-  servername: www.epson.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 104.171.135.229
+  server: 185.178.208.167
   port: 443
   udp: true
   type: vless
-  uuid: Fluffy_VPN-Oth8rOq3
-  flow: xtls-rprx-vision
+  uuid: ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454
   tls: true
-  reality-opts:
-    public-key: mpo4BIcoWiMXAQGt5a8IJ4MFkPJQyLC50dO_bXzC7z0
-  servername: absolute-disaster.org
-  client-fingerprint: chrome
+  servername: unlik.club
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /static/telemetry/3c9aaef00005/
+    headers:
+      Host: tochkacdn.top
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   server: xssite.webredirect.org
   port: 443
@@ -91,6 +93,19 @@ proxies:
   grpc-opts:
     grpc-service-name: grpc-ru
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  server: 147.45.175.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xssite.webredirect.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   server: 136.148.83.69
   port: 443
   udp: true
@@ -113,6 +128,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -126,5 +142,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
 rules:
 - MATCH,PROXIES
