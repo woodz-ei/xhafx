@@ -17,17 +17,34 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: cache.sync.v1
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: 104.18.32.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: c2425034-91ef-44bf-9fd4-f2be9c1e989a
+  tls: true
+  servername: sinavm3.soft10.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm3.soft10.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 rules:
 - MATCH,PROXIES
