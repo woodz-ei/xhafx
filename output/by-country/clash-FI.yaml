@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: static.28.210.29.2.clients.your-server.de
+  server: 2.29.210.28
   port: 25565
   udp: true
   type: ss
