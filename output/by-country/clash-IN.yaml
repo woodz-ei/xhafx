@@ -17,18 +17,19 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: 152.67.8.205
-  port: 80
+  server: xray-ikmqcro3-rapid-river-6.cloady.io
+  port: 443
   udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 213224a4-6cd1-b7f4-8bbc-4f50e5ed847b
+  tls: true
+  servername: xray-ikmqcro3-rapid-river-6.cloady.io
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /c54a815e676d9acc
     headers:
-      Host: in-152.67.8.205-0242
+      Host: xray-ikmqcro3-rapid-river-6.cloady.io
 proxy-groups:
 - name: PROXIES
   type: select
