@@ -29,7 +29,7 @@
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
       "server": "92.63.189.39",
       "server_port": 8443,
-      "uuid": "7aa77858-f235-0005-9434-7ab060848b17",
+      "uuid": "7aa77858-f235-44d6-9434-7ab060848b17",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -40,22 +40,21 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 03 - xiaohe",
-      "server": "leviko-nl2962.shopingggg.ir",
-      "server_port": 9543,
-      "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
-      "flow": "xtls-rprx-vision",
+      "server": "109.248.17.252",
+      "server_port": 443,
+      "uuid": "9000a7f3-df2a-49a8-ae56-3e7777bd32f7",
       "tls": {
         "enabled": true,
-        "server_name": "storage.yandexcloud.net",
+        "server_name": "v4.clequinix.globalinetforallalwaysandneverbanyoubelieveme.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
-          "short_id": "123abcdf"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "v4-clequinix-globalinetforallalwaysandneverbanyoubelieveme-com"
       }
     },
     {

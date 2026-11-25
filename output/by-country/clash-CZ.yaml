@@ -22,24 +22,24 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 7aa77858-f235-0005-9434-7ab060848b17
+  uuid: 7aa77858-f235-44d6-9434-7ab060848b17
   flow: xtls-rprx-vision
   tls: true
   servername: avelon.onl
   skip-cert-verify: false
 - name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: leviko-nl2962.shopingggg.ir
-  port: 9543
+  server: 109.248.17.252
+  port: 443
   udp: true
   type: vless
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  flow: xtls-rprx-vision
+  uuid: 9000a7f3-df2a-49a8-ae56-3e7777bd32f7
   tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
-  client-fingerprint: chrome
+  servername: v4.clequinix.globalinetforallalwaysandneverbanyoubelieveme.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: v4-clequinix-globalinetforallalwaysandneverbanyoubelieveme-com
 proxy-groups:
 - name: PROXIES
   type: select

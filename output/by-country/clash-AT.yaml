@@ -12,7 +12,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02 - xiaohe
-  server: 154.47.19.225
+  server: leviko-at3530.shopingggg.ir
   port: 1270
   udp: true
   type: vmess

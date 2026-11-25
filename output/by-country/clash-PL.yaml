@@ -5,15 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 92.63.189.39
-  port: 8443
+  server: 150.241.87.52
+  port: 443
   udp: true
   type: vless
-  uuid: 7aa77858-f235-44d6-9434-7ab060848b17
+  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
   flow: xtls-rprx-vision
   tls: true
-  servername: avelon.onl
-  skip-cert-verify: false
+  reality-opts:
+    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
+  servername: pl.galacticworld.online
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
