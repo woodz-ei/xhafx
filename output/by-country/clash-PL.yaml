@@ -5,12 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 217.30.10.70
-  port: 9037
+  server: 92.63.189.39
+  port: 8443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: TN2YqghxeFDKZfLU
+  type: vless
+  uuid: 7aa77858-f235-44d6-9434-7ab060848b17
+  flow: xtls-rprx-vision
+  tls: true
+  servername: avelon.onl
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
