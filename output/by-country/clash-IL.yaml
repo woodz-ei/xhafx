@@ -16,9 +16,9 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
-  server: 71b840t.de7.h1clayd.click
+  server: 195.206.235.72
   port: 443
   udp: true
   type: vless
