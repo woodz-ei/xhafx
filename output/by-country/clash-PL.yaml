@@ -5,16 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 150.241.87.52
+  server: 46.243.232.78
   port: 443
   udp: true
   type: vless
-  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
+  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+  tls: true
+  servername: e2.cdnwh.icu
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /stream/segment/3078a41dd7eb/
+    headers:
+      Host: e2.cdnwh.icu
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 150.251.113.34
+  port: 443
+  udp: true
+  type: vless
+  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
-  servername: pl.galacticworld.online
+    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
+    short-id: 150a627d15154cf2
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  server: 82.118.22.161
+  port: 443
+  udp: true
+  type: vless
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -22,11 +51,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
