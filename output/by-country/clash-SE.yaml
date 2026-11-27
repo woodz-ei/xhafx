@@ -12,17 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 62.93.166.184
   port: 1270
   udp: true
@@ -33,7 +22,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -46,6 +35,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: ws.dhafhdtjdti.site
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9f749472-c636-4c5a-af51-7f8feefaac81
+  tls: true
+  servername: ws.dhafhdtjdti.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
