@@ -6,6 +6,26 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - xiaohe",
+      "server": "178.212.35.198",
+      "server_port": 443,
+      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
+          "short_id": "6bdc8320"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - xiaohe",
       "server": "13.140.56.100",
       "server_port": 14430,
       "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
@@ -19,21 +39,20 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - xiaohe",
-      "server": "178.212.35.198",
+      "tag": "🇮🇳 印度 (India) 03 - xiaohe",
+      "server": "13.140.74.242",
       "server_port": 443,
-      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
+      "uuid": "213224a4-6cd1-b7f4-8bbc-4f50e5ed847b",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
-          "short_id": "6bdc8320"
+        "server_name": "xray-ikmqcro3-rapid-river-6.cloady.io",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/c54a815e676d9acc",
+        "headers": {
+          "Host": "xray-ikmqcro3-rapid-river-6.cloady.io"
         }
       }
     },
@@ -43,7 +62,8 @@
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01 - xiaohe",
-        "🇮🇳 印度 (India) 02 - xiaohe"
+        "🇮🇳 印度 (India) 02 - xiaohe",
+        "🇮🇳 印度 (India) 03 - xiaohe"
       ]
     },
     {
@@ -51,7 +71,8 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇳 印度 (India) 01 - xiaohe",
-        "🇮🇳 印度 (India) 02 - xiaohe"
+        "🇮🇳 印度 (India) 02 - xiaohe",
+        "🇮🇳 印度 (India) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

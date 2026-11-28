@@ -1,0 +1,95 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.18.41.190",
+      "server_port": 443,
+      "uuid": "53580685-9d8b-42ca-9b84-c93765d9b952",
+      "tls": {
+        "enabled": true,
+        "server_name": "institutes-creativity-cards-affairs.trycloudflare.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl-53580685",
+        "headers": {
+          "Host": "institutes-creativity-cards-affairs.trycloudflare.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 02 - xiaohe",
+      "server": "104.18.41.190",
+      "server_port": 443,
+      "uuid": "531d9e93-53be-4f05-a9c1-33490d4da2f3",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp.bbusxxxh.top",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/images",
+        "headers": {
+          "Host": "jp.bbusxxxh.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 03 - xiaohe",
+      "server": "104.18.41.190",
+      "server_port": 443,
+      "uuid": "b2593749-691c-428c-9481-14979cba3446",
+      "tls": {
+        "enabled": true,
+        "server_name": "xi.tbv.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "xi.tbv.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

@@ -4,34 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇦🇹 奥地利 (Austria) 01 - xiaohe",
+      "server": "154.47.19.225",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
       "server": "82.110.60.9",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-      "server": "172.67.199.12",
-      "server_port": 443,
-      "uuid": "963A4918-A630-29DA-A873-093CDF8AD784",
-      "tls": {
-        "enabled": true,
-        "server_name": "ancient-haze-d203.vpnetwork3567.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "ancient-haze-d203.vpnetwork3567.workers.dev"
-        }
-      }
     },
     {
       "type": "selector",
